@@ -44,7 +44,7 @@ jobs:
       - name: Compose Password-Protected libertymaster.html Page
       - run: python encrypt.py $/_site/libertymaster.html Liberty@2024
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
   # Deployment job
   deploy:
     environment:
