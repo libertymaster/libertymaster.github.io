@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Liberty</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  color: white;
+  background: black;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  color: black;
+  background-color: white;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+/* Column */
+.column {
+  float: center;
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: black;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<div class="header">
+  <h1>Liberty</h1>
+  <h2>Embrace your liberty!</h2>
+</div>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="liberty.html">Liberty</a>
+  <a href="history.html">History</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" style="float:right">Contact</a>
+</div>
+</head>
+<body>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h2>What does liberty mean to you?</h2>
+      <h2>Looking to the Past: History 1776-2024</h2>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <h2>Quotes on Liberty</h2>
+      <p>"The tree of liberty must be refreshed from time to time with the blood of patriots and tyrants." ~ Thomas Jefferson</p>
+      <p>"Liberty, when it begins to take root, is a plant of rapid growth." ~ George Washington</p>
+      <p>"Extremism in the defense of liberty is no vice. And moderation in the pursuit of justice is no virtue." ~ Barry Goldwater</p>
+      <p>"He that would make his own liberty secure, must guard even his enemy from oppression; for if he violates this duty, he establishes a precedent that will reach to himself." ~ Thomas Paine</p>
+      <p>"Disobedience is the true foundation of liberty. The obedient must be slaves." ~ Henry David Thoreau</p>
+    </div>
+    <div class="card">
+      <h2>What did liberty mean to people in the "Old World"?</h2>
+      <h2>Looking to the Past: History 1600-1775</h2>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+<div class="row">
+  <div class="column">
+    <h2>Liberty</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+</body>
+</html>
