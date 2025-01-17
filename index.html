@@ -10,17 +10,19 @@
 
 body {
   font-family: Arial;
-  padding: 10px;
+  padding: 20px;
   color: white;
   background: black;
+  font-size: 20px;
 }
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
+  padding: 60px;
   text-align: center;
   color: white;
   background: black;
+  font-size: 30px;
 }
 
 .header h1 {
@@ -46,40 +48,17 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: lightblue;
+  background-color: blue;
   color: black;
 }
 
 /* Column */
-.column {
-  float: center;
+.col-sm-8 {
+  float: left;
   width: 100%;
   color: white;
   background-color: black;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  color: white;
-  background-color: black;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  color: white;
-  background-color: black;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+  text-align: center;
 }
 
 /* Footer */
@@ -93,7 +72,7 @@ body {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .column {   
+  .col-sm-8 {   
     width: 100%;
     padding: 0;
   }
@@ -124,39 +103,35 @@ body {
   <a href="contact.html" style="float:right">Contact</a>
 </div>
 
-  <div class="column">
-    <h2>What is The Liberty Emporium?</h2>
-    <h3>A marketplace (emporium) that is free from oppressive restriction or control (liberty).</h3>
+  <div class="col-sm-8">
+      <h2>What is The Liberty Emporium?</h2>
+      <h3>A marketplace (emporium) that is free from oppressive restriction or control (liberty).</h3>
   </div>
 
-  <div class="column">
-    <h2>Looking to the Past</h2>
-    <h3>Learning From History Through Studying and Analyzing Historic Events of the Past</h3>
-    <h3>Only by looking at the mistakes of the past can we avoid making the same mistakes in the future.</h3>
+  <div class="col-sm-8">
+      <h2>Looking to the Past</h2>
+      <h3>Learning From History Through Studying and Analyzing Historic Events of the Past</h3>
+      <h3>Only by looking at the mistakes of the past can we avoid making the same mistakes in the future.</h3>
   </div>
 
-<div>
-<h2>The Presidential Election of 2008</h2>
-</div>
+  <div class="col-sm-8">
+      <h2>The Presidential Election of 2008</h2>
+  </div>
 
 <div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FG2PUZoukfA?si=3hWmnRR1i7jbp3V3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div>
-<h2>Ron Paul's Infamous "What If" Speech</h2>
-</div>
+  <div class="col-sm-8">
+      <h2>Ron Paul's Infamous "What If" Speech</h2>
+      <h5>February 12, 2009</h5>
 
 <div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4fHfdSi-GDo?si=vNoG-EnYFr-rHxVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div>
-<h3>Transcript:</h3>
-</div>
-
-<div class="column">
-<h4>The SPEAKER pro tempore. Under a previous order of the House, the gentleman from Texas (Mr. PAUL) is recognized for 5 minutes.
+<p>Transcript</p>
+<p>The SPEAKER pro tempore. Under a previous order of the House, the gentleman from Texas (Mr. PAUL) is recognized for 5 minutes.
 			<br/>
 			<br/>
 Mr. PAUL. Madam Speaker, I have a few questions for my colleagues.
@@ -228,74 +203,57 @@ What if diplomacy is found to be superior to bombs and bribes in protecting Amer
 What happens if my concerns are completely unfounded? Nothing.
 			<br/>
 			<br/>
-But what happens if my concerns are justified and ignored? Nothing good.
-</h4>
+But what happens if my concerns are justified and ignored? Nothing good.</p>
 </div>
 
-<div>
-<h2>Ron Paul's Infamous "What If" Speech (put to Metallica)</h2>
-</div>
+  <div class="col-sm-8">
+      <h2>Ron Paul's Infamous "What If" Speech (put to Metallica)</h2>
+  </div>
 
 <div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FqAF-Alc7CM?si=2CVEyFOwj7kZacqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div>
-<h2>Ron Paul's Farewell Speech to Congress</h2>
-</div>
+  <div class="col-sm-8">
+      <h2>Ron Paul's Farewell Speech to Congress</h2>
+      <h5>November 16, 2012</h5>
 
 <div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lfY_cXFfh3A?si=nGZeUWM8hvJrj_rE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div>
-<h3>Transcript:</h3>
+<p>Transcript</p>
+<p>On November 14, 2012, retiring Rep. Ron Paul (R-Texas) gave his farewell speech to Congress.</p>
+
+<p>In a public career that included three stints in Congress (1976-1977; 1979-1985; and 1997-present) and a run for president as the Libertarian Candidate (1988), no living elected official has done more to advance the ideals of limited government and a libertarian approach to federal government.</p>
+
+<p>His longshot bids for the Republican presidential nomination in 2008 and 2012 radically altered the national conversation on entitlements, fiscal and monetary policy, foreign policy, and crony capitalism, and his success with online fundraising and organization has set the example that others will be following for years to come. The groups he has created, including Young Americans for Liberty and Campaign for Liberty, will continue to grow in size and influence.</p>
+
+<p>Paul used his final address in the House of Representatives to draw attention to growing violations of civil liberties, a chronic economic crisis brought on out-of-control government spending and debt, the ease with which the country goes to (undeclared) war, and the immoral willingness to use violence to achieve desired social ends.</p>
+
+<p>As Paul's biographer, Reason staffer Brian Doherty, noted, Ron Paul is "a true American original. No politician talks like this, and I suspect it will be a long time before another does. Ideas like this will be much harder to find in the House of Representatives with Paul gone, and we will all be the poorer for it."</p>
+
+<p>Go to http://reason.com/tags/ron-paul for Reason's coverage of the congressman known as "Dr. No" for his refusal to sanction legislation the he felt was not authorized by the U.S. Constitution.</p>
+<p>Produced by Zach Weissmueller, text by Nick Gillespie. About 50 minutes.</p>
 </div>
 
-<div class="column">
-<h4>Nov 16, 2012
-	On November 14, 2012, retiring Rep. Ron Paul (R-Texas) gave his farewell speech to Congress.
-</h4>
-<h4>
-	In a public career that included three stints in Congress (1976-1977; 1979-1985; and 1997-present) and a run for president as the Libertarian Candidate (1988), no living elected official has done more to advance the ideals of limited government and a libertarian approach to federal government.
-</h4>
-<h4>
-	His longshot bids for the Republican presidential nomination in 2008 and 2012 radically altered the national conversation on entitlements, fiscal and monetary policy, foreign policy, and crony capitalism, and his success with online fundraising and organization has set the example that others will be following for years to come. The groups he has created, including Young Americans for Liberty and Campaign for Liberty, will continue to grow in size and influence.
-</h4>
-<h4>
-	Paul used his final address in the House of Representatives to draw attention to growing violations of civil liberties, a chronic economic crisis brought on out-of-control government spending and debt, the ease with which the country goes to (undeclared) war, and the immoral willingness to use violence to achieve desired social ends.
-</h4>
-<h4>
-	As Paul's biographer, Reason staffer Brian Doherty, noted, Ron Paul is "a true American original. No politician talks like this, and I suspect it will be a long time before another does. Ideas like this will be much harder to find in the House of Representatives with Paul gone, and we will all be the poorer for it."
-</h4>
-<h4>
-	Go to http://reason.com/tags/ron-paul for Reason's coverage of the congressman known as "Dr. No" for his refusal to sanction legislation the he felt was not authorized by the U.S. Constitution.
-</h4>
-<h4>
-	Produced by Zach Weissmueller, text by Nick Gillespie. About 50 minutes.
-</h4>
-</div>
-
-  <div class="column">
-    <h3>The Future is Coming</h3>
-    <h3>The Future is Tomorrow</h3>
+  <div class="col-sm-8">
+      <h3>The Future is Coming</h3>
+      <h3>The Future is Tomorrow</h3>
   </div>
-</div>
-  </div>
-  <div class="column">
-    <div class="card">
+  <div class="col-sm-8">
       <h2>About Me</h2>
       <h4>LibertyMaster</h4>
     </div>
- <img src="me.png" alt="LibertyMaster's pic"> 
-    <div class="card">
+  <img src="me.png" alt="LibertyMaster's pic"> 
+    <div class="col-sm-8">
       <h3>Follow Me</h3>
       <h4>LibertyMaster</h4>
       <h4>libertymaster@thelibertyemporium.com</h4>
-      <h2>Embrace your liberty!</h2>
+      <a href="mailto:libertymaster@thelibertyemporium.com">Send email correspondence to libertymaster</a>
     </div>
-  </div>
-</div>
+      
+  <h2>Embrace your liberty!</h2>
 
 <div class="footer">
   <h2>The Liberty Emporium®</h2>
