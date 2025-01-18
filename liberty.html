@@ -1,53 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" />
-<title>Liberty</title>
-<style>
-div {
-  width: 160px;
-  height: 80px;
-  padding: 20px;
-  border: 8px solid black;
-  background: white;
-}
-
-.content-box {
-  box-sizing: content-box;
-  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
-     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
-     Content box width: 160px
-     Content box height: 80px */
-}
-
-.border-box {
-  box-sizing: border-box;
-  /* Total width: 160px
-     Total height: 80px
-     Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
-     Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px */
-}
-
+  <head>
+    <meta charset="utf-8" />
+     <title>Home</title>
+      <style>
 * {
-box-sizing: border-box;
-width: 100%;
-border: solid #1100ff 10px;
-padding: 5px;
+  box-sizing: border-box;
 }
 
- nbvbody {
+body {
   font-family: Arial;
-  padding: 10px;
+  padding: 20px;
   color: white;
   background: black;
+  font-size: 20px;
 }
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
+  padding: 60px;
   text-align: center;
   color: white;
   background: black;
+  font-size: 30px;
 }
 
 .header h1 {
@@ -73,122 +48,85 @@ padding: 5px;
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: lightblue;
+  background-color: green;
   color: black;
 }
 
 /* Column */
-.column {
+.col-sm-8 {
   float: left;
   width: 100%;
   color: white;
   background-color: black;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  color: white;
-  background-color: black;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  color: white;
-  background-color: black;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
-  color: white;
-  background: black;
+  color: black;
+  background: white;
   margin-top: 20px;
 }
+      </style>
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .column {   
-    width: 100%;
-    padding: 0;
-  }
-}
+    <div class="header">
+        <h1>Liberty</h1>
+        <h2>What is liberty?</h2>
+        <p>What does liberty mean to you?</p>
+        <p>Embrace your liberty!</p>
+    </div>
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-<div class="header">
-  <h1>Liberty</h1>
-  <h2>What does liberty mean to you?</h2>
-  <h2>Embrace your liberty!</h2>
-</div>
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="liberty.html">Liberty</a>
-  <a href="history.html">History</a>
-  <a href="about.html">About</a>
-  <a href="contact.html" style="float:right">Contact</a>
-</div>
-</head>
-<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="liberty.html">Liberty</a>
+        <a href="history.html">History</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="form.html" style="float:right">Form</a>
+    </div>
+  </head>
+   <body>
 
-<div>
-    <h2>What About Liberty?</h2>
-</div>
+    <div class="col-sm-8">
+        <h2>What About Liberty?</h2>
+    </div>
 
-<div>
-    <h2>What is liberty?</h2>
-</div>
+    <div class="col-sm-8">
+        <h2>What is liberty?</h2>
+    </div>
 
-<div class="column">
-<h3>According to Merriam-Webster Dictionary:</h3>
-<h4>lib·​er·​ty ˈli-bər-tē</h4>
-<h4>1: the quality or state of being free:</h4>
-<h4>a: the power to do as one pleases</h4>
-<h4>b: freedom from physical restraint</h4>
-<h4>c: freedom from arbitrary or despotic (see despot sense 1) control</h4>
-<h4>d: the positive enjoyment of various social, political, or economic rights and privileges</h4>
-<h4>e: the power of choice</h4>
+    <div class="col-sm-8">
+        <h3>According to Merriam-Webster Dictionary:</h3>
+<p>lib·​er·​ty ˈli-bər-tē</p>
+<p>1: the quality or state of being free:</p>
+<p>a: the power to do as one pleases</p>
+<p>b: freedom from physical restraint</p>
+<p>c: freedom from arbitrary or despotic (see despot sense 1) control</p>
+<p>d: the positive enjoyment of various social, political, or economic rights and privileges</p>
+<p>e: the power of choice</p>
 <h3>According to The American Heritage® Dictionary of the English Language, 5th Edition:</h3>
-<h4>lib·er·ty (lĭbər-tē)</h4>
-<h4>1. The condition of being free from confinement, servitude, or forced labor.</h4>
-<h4>2.a. The condition of being free from oppressive restriction or control by a government or other power.</h4>
-<h4>b. A right to engage in certain actions without control or interference by a government or other power: the liberties protected by the Bill of Rights.</h4>
-<h4>3. The right or power to act as one chooses.</h4>
+<p>lib·er·ty (lĭbər-tē)</p>
+<p>1. The condition of being free from confinement, servitude, or forced labor.</p>
+<p>2.a. The condition of being free from oppressive restriction or control by a government or other power.</p>
+<p>b. A right to engage in certain actions without control or interference by a government or other power: the liberties protected by the Bill of Rights.</p>
+<p>3. The right or power to act as one chooses.</p>
 <h3>According to the Oxford English Dictionary:</h3>
-<h4>lib·er·ty</h4>
-<h4>I. The state or condition of being free.</h4>
-<h4>I.1.a. Theology. Freedom from the bondage or dominating influence of sin, spiritual servitude, worldly ties, etc.</h4>
-<h4>I.1.b. Freedom or release from slavery, bondage, or imprisonment.</h4>
-<h4>I.1.c. Freedom from arbitrary, despotic, or autocratic control; independence, esp. from a foreign power, monarchy, or dictatorship. civil liberty n.</h4>
-<h4>I.2.a. The condition of being able to act or function without hindrance or restraint; faculty or power to do as one likes. See also personal liberty n.</h4>
-<h4>I.2.b. Philosophy and Theology. The fact of not being controlled by or subject to fate; freedom of will. Frequently opposed to necessity. liberty of will n.
-Freedom is now the more common term (see freedom n.).</h4>
-<h4>I.2.c. Chiefly in plural. Each of those social and political freedoms which are considered to be the entitlement of all members of a community; a civil liberty. liberty of speech n. liberty of conscience n. liberty of religion n.</h4>
-<h3>What does liberty mean to you?</h3>
-<h3>Embrace your liberty!</h3>
-</div>
+<p>lib·er·ty</p>
+<p>I. The state or condition of being free.</p>
+<p>I.1.a. Theology. Freedom from the bondage or dominating influence of sin, spiritual servitude, worldly ties, etc.</p>
+<p>I.1.b. Freedom or release from slavery, bondage, or imprisonment.</p>
+<p>I.1.c. Freedom from arbitrary, despotic, or autocratic control; independence, esp. from a foreign power, monarchy, or dictatorship. civil liberty n.</p>
+<p>I.2.a. The condition of being able to act or function without hindrance or restraint; faculty or power to do as one likes. See also personal liberty n.</p>
+<p>I.2.b. Philosophy and Theology. The fact of not being controlled by or subject to fate; freedom of will. Frequently opposed to necessity. liberty of will n.
+Freedom is now the more common term (see freedom n.).</p>
+<p>I.2.c. Chiefly in plural. Each of those social and political freedoms which are considered to be the entitlement of all members of a community; a civil liberty. liberty of speech n. liberty of conscience n. liberty of religion n.</p>
+<h4>What does liberty mean to you?</h4>
+<h4>Embrace your liberty!</h4>
+    </div>
 
-<div>
-<h2>Quotes on Liberty</h2>
-</div>
+    <div class="col-sm-8">
+        <h2>Quotes on Liberty</h2>
 [
   {
     "quote" : "The tree of liberty must be refreshed from time to time with the blood of patriots and tyrants.",
@@ -211,21 +149,15 @@ Freedom is now the more common term (see freedom n.).</h4>
     "author" : "Henry David Thoreau"
   },
 ]
-<div class="column">
-      <h4> ~ </h4>
-      <h4>"" ~ </h4>
-      <h4>"" ~ </h4>
-      <h4>"" ~ </h4>
-      <h4>"" ~ </h4>
-</div>
+    </div>
+    
+    <div class="col-sm-8">
+        <p>Embrace your liberty!</p>
+    </div>
 
-<div>
-    <h2>Embrace your liberty!</h2>
-</div>
-
-<div class="footer">
-  <h4>The Liberty Emporium®</h2>
-</div>
+    <div class="footer">
+        <p>The Liberty Emporium®</p>
+    </div>
   
-</body>
+   </body>
 </html>

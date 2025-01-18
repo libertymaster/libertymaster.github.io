@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" />
-<title>Contact</title>
-<style>
+  <head>
+    <meta charset="utf-8" />
+     <title>Home</title>
+      <style>
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: Arial;
-  padding: 10px;
+  padding: 20px;
   color: white;
   background: black;
+  font-size: 20px;
 }
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
+  padding: 60px;
   text-align: center;
   color: white;
   background: black;
+  font-size: 30px;
 }
 
 .header h1 {
@@ -46,92 +48,57 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: lightblue;
+  background-color: green;
   color: black;
 }
 
 /* Column */
-.column {
-  float: center;
+.col-sm-8 {
+  float: left;
   width: 100%;
   color: white;
   background-color: black;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  color: white;
-  background-color: black;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  color: white;
-  background-color: black;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
-  color: white;
-  background: black;
+  color: black;
+  background: white;
   margin-top: 20px;
 }
+      </style>
+    <div class="header">
+        <h2>Contact</h2>
+        <p>Embrace your liberty!</p>
+    </div>
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .column {   
-    width: 100%;
-    padding: 0;
-  }
-}
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="liberty.html">Liberty</a>
+        <a href="history.html">History</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="form.html" style="float:right">Form</a>
+    </div>
+  </head>
+   <body>
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-<div class="header">
-  <h2>Contact</h2>
-  <h2>Embrace your liberty!</h2>
-</div>
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="liberty.html">Liberty</a>
-  <a href="history.html">History</a>
-  <a href="about.html">About</a>
-  <a href="contact.html" style="float:right">Contact</a>
-</div>
-</head>
-<body>
+    <div class="col-sm-8">
+        <h2>Contact</h2>
+        <h4>libertymaster@thelibertyemporium.com</h4>
+        <a href="mailto:libertymaster@thelibertyemporium.com">Send email correspondence to libertymaster</a>
+        <img src="me.png" alt="LibertyMaster's pic">
+    </div>
+    
+    <div class="col-sm-8">
+        <p>Embrace your liberty!</p>
+    </div>
 
-  <div class="column">
-    <h2>Contact</h2>
-   <h4>libertymaster@thelibertyemporium.com</h4>
-   <a href="mailto:libertymaster@thelibertyemporium.com">Send email correspondence to libertymaster</a>
-  </div>
-<img src="me.png" alt="LibertyMaster's pic">
-<h2>Embrace your liberty!</h2
+    <div class="footer">
+        <p>The Liberty Emporium®</p>
+    </div>
 
-<div class="footer">
-  <h2>The Liberty Emporium®</h2>
-</div>
-
-</body>
+   </body>
 </html>
