@@ -85,17 +85,31 @@ body {
   margin-top: 20px;
 }
 
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.dropdown {
-  position: relative;
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgreen;
+}
+
+li.dropdown {
   display: inline-block;
 }
 
@@ -113,16 +127,13 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
 }
 </style>
 </head>
@@ -177,28 +188,27 @@ body {
 </div>
 
 <hr>
-
-<div class="topnav">
-   <a href="index.html">Home</a>
-   <a href="liberty.html">Liberty</a>
-   <a href="history.html">History</a>
-   <a href="about.html">About</a>
-   <a href="form.html" style="float:right">Form</a>
-   <a href="contact.html" style="float:right">Contact</a>
-<div class="dropdown">
- <button class="dropbtn">History</button>
-  <div class="dropdown-content">
-   <a href="/history/heroes_of_history/marc_bloch_history.html">Heroes of History | Marc Bloch</a>
-   <a href="/history/heroes_of_history/ron_paul_history.html">Heroes of History | Ron Paul</a>
-  <!--<a href="/history/on_this_day/"></a>-->
-  <!--<a href="/history/us_history/"></a>-->
-  <!--<a href="/history/world_history/"></a>-->
- <button class="dropbtn">Liberty</button>
-  <!--<a href="liberty/before_1776/">Liberty</a>-->
-  <!--<a href="liberty/after_1776/">Liberty</a>-->
-  </div>
-  </div>
-</div>
+    
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html" style="float:right">About</a></li>
+  <li><a href="form.html" style="float:right">Form</a></li>
+  <li><a href="contact.html" style="float:right">Contact</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Liberty</a>
+    <div class="dropdown-content">
+      <a href="liberty/before_1776/"></a>
+      <a href="liberty/after_1776/"></a>
+      <a href="javascript:void(0)" class="dropbtn">History</a>
+    <div class="dropdown-content">
+      <a href="/history/heroes_of_history/marc_bloch_history.html">Heroes of History | Marc Bloch</a>
+      <a href="/history/heroes_of_history/ron_paul_history.html">Heroes of History | Ron Paul</a>
+      <a href="/history/on_this_day/"></a>
+      <a href="/history/us_history/"></a>
+      <a href="/history/world_history/"></a>
+    </div>
+  </li>
+</ul>
 
 <hr>
     
