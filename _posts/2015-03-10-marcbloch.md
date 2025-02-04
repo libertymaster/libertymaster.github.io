@@ -1,11 +1,12 @@
 ---
 layout: post
 author: lamont
-title: LibertyBlog
+title: Marc Bloch: A Man of Courage
 ---
-<!DOCTYPE html> <html lang=en style>
+<!DOCTYPE html> 
+<html lang=en style>
   <head>
-    <title>LibertyBlog</title>
+    <title>Marc Bloch: A Man of Courage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
@@ -156,8 +157,6 @@ Bloch, Marc. Strange Defeat; a Statement of Evidence Written in 1940. New York: 
 <h4>Embrace your history!</h4>
 <hr />
 
-
-
     <footer>
       <h2>Contact</h2>
         <img src="/assets/images/me.png" alt="Lamont Kimberlin" />
@@ -169,5 +168,4 @@ Bloch, Marc. Strange Defeat; a Statement of Evidence Written in 1940. New York: 
     </footer>
   
   </body>    
-
 </html>
