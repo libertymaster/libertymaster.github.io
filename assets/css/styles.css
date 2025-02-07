@@ -1,9 +1,9 @@
-html,
+.html,
 * {
   box-sizing: border-box;
 }
  
-body {
+.body {
   height: 100%;
   font-family: Times New Roman;
   padding: 20px;
@@ -27,8 +27,8 @@ body {
   flex-grow: 1;
 }
 
-header,
-footer {
+.header,
+.footer {
   height: 50px;
   padding: 60px;
   text-align: center;
@@ -49,13 +49,13 @@ footer {
   flex-grow: 1;
 }
 
-topnav {
+.topnav {
   overflow: hidden;
   color: black;
   background-color: white;
 }
 
-topnav a {
+.topnav a {
   float: left;
   display: block;
   color: black;
@@ -65,12 +65,12 @@ topnav a {
 }
 
 /* Change color on hover */
-topnav a:hover {
+.topnav a:hover {
   background-color: black;
   color: black;
 }
 
-ul {
+.ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -78,11 +78,11 @@ ul {
   background-color: #333;
 }
 
-li {
+.li {
   float: left;
 }
 
-li a, .dropbtn {
+.li a, .dropbtn {
   display: inline-block;
   color: black;
   text-align: center;
@@ -90,15 +90,15 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.li a:hover, .dropdown:hover .dropbtn {
   background-color: green;
 }
 
-li.dropdown {
+.li.dropdown {
   display: inline-block;
 }
 
-dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -107,7 +107,7 @@ dropdown-content {
   z-index: 1;
 }
 
-dropdown-content a {
+.dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -115,11 +115,11 @@ dropdown-content a {
   text-align: left;
 }
 
-dropdown-content a:hover {
+.dropdown-content a:hover {
   background-color: green;
 }
 
-dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
