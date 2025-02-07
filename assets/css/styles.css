@@ -1,9 +1,9 @@
-.html,
+html,
 * {
   box-sizing: border-box;
 }
  
-.body {
+body {
   height: 100%;
   font-family: Times New Roman;
   padding: 20px;
@@ -14,21 +14,21 @@
   margin: 0;
 }
 
-/*.container {
+container {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
 }
 
-.container #body {
+container #body {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
 }
 
-.header,
-.footer {
+header,
+footer {
   height: 50px;
   padding: 60px;
   text-align: center;
@@ -38,24 +38,24 @@
   width: 100%;
 }
 
-.left,
-.right {
+left,
+right {
   background: black;
   width: 100px; /*change to whatever width you want*/
 }
 
-/* .center {
+center {
   background: black;
   flex-grow: 1;
 }
 
-.topnav {
+topnav {
   overflow: hidden;
   color: black;
   background-color: white;
 }
 
-.topnav a {
+topnav a {
   float: left;
   display: block;
   color: black;
@@ -65,12 +65,12 @@
 }
 
 /* Change color on hover */
-.topnav a:hover {
+topnav a:hover {
   background-color: white;
   color: black;
 }
 
-.ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -78,11 +78,11 @@
   background-color: #333;
 }
 
-.li {
+li {
   float: left;
 }
 
-.li a, .dropbtn {
+li a, .dropbtn {
   display: inline-block;
   color: black;
   text-align: center;
@@ -90,15 +90,15 @@
   text-decoration: none;
 }
 
-.li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn {
   background-color: green;
 }
 
-.li.dropdown {
+li.dropdown {
   display: inline-block;
 }
 
-.dropdown-content {
+dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -107,7 +107,7 @@
   z-index: 1;
 }
 
-.dropdown-content a {
+dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -115,15 +115,15 @@
   text-align: left;
 }
 
-.dropdown-content a:hover {
+dropdown-content a:hover {
   background-color: green;
 }
 
-.dropdown:hover .dropdown-content {
+dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropbtn {
+dropbtn {
   background-color: #04AA6D;
   color: black;
   padding: 16px;
@@ -131,12 +131,12 @@
   border: none;
 }
 
-.dropdown {
+dropdown {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+dropdown-content {
   display: none;
   position: absolute;
   background-color: black;
@@ -145,7 +145,7 @@
   z-index: 1;
 }
 
-.dropdown-content a {
+dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -153,14 +153,14 @@
 }
 
  /* Navbar container */
-.navbar {
+navbar {
   overflow: hidden;
   background-color: #333;
   font-family: Arial;
 }
 
 /* Links inside the navbar */
-.navbar a {
+navbar a {
   float: left;
   font-size: 16px;
   color: white;
@@ -170,13 +170,13 @@
 }
 
 /* The dropdown container */
-.dropdown {
+dropdown {
   float: left;
   overflow: hidden;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
+dropdown .dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -188,12 +188,12 @@
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
 /* Dropdown content (hidden by default) */
-.dropdown-content {
+dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -204,19 +204,19 @@
 }
 
 /* Mega Menu header, if needed */
-.dropdown-content .header {
+dropdown-content .header {
   background: green;
   padding: 16px;
   color: white;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+dropdown:hover .dropdown-content {
   display: block;
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
+column {
   float: left;
   width: 33.33%;
   padding: 10px;
@@ -225,7 +225,7 @@
 }
 
 /* Style links inside the columns */
-.column a {
+column a {
   float: none;
   color: black;
   padding: 16px;
@@ -235,12 +235,12 @@
 }
 
 /* Add a background color on hover */
-.column a:hover {
+column a:hover {
   background-color: #ddd;
 }
 
 /* Clear floats after the columns */
-.row:after {
+row:after {
   content: "";
   display: table;
   clear: both;
