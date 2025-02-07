@@ -14,7 +14,7 @@
   margin: 0;
 }
 
-.container {
+/*.container {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -44,7 +44,7 @@
   width: 100px; /*change to whatever width you want*/
 }
 
-.center {
+/* .center {
   background: black;
   flex-grow: 1;
 }
@@ -66,7 +66,7 @@
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: black;
+  background-color: white;
   color: black;
 }
 
