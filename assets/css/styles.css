@@ -1,4 +1,4 @@
-body {
+.body {
   height: 100%;
   font-family: Times New Roman;
   padding: 20px;
@@ -13,7 +13,7 @@ body {
   box-sizing: border-box;
 }
 
-body {
+/*body {
   font-family: Arial;
   padding: 10px;
   color: white;
