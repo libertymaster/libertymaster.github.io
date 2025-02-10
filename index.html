@@ -54,30 +54,30 @@ h3 {
   font-family: "Times New Roman";
 }
 
-/* Large rounded lightgreen border */
+/* Red border */
 hr.new1 {
-  border: 10px solid lightgreen;
-  border-radius: 5px;
+  border-top: 3px solid blue;
 }
 
-hr { 
-  display: block;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 7px;
-}
-
-/* Thick lightblue border */
+/* Dashed red border */
 hr.new2 {
-  border: 7px solid lightblue;
+  border-top: 3px solid lightblue;
 }
 
-/* Thick orange border */
+/* Dotted red border */
 hr.new3 {
-  border: 7px solid lightorange;
+  border-top: 3px dashed blue;
+}
+
+/* Thick red border */
+hr.new4 {
+  border: 3px solid purple;
+}
+
+/* Large rounded green border */
+hr.new5 {
+  border: 7px solid lightgreen;
+  border-radius: 5px;
 }
   </style>
  </head>
@@ -85,12 +85,12 @@ hr.new3 {
   <main>
    <article class="w3-container">
     <header class="w3-container">
-<hr>    
+<hr class="new5">    
     <h1>The Liberty Emporium</h1>
-<hr>    
+<hr class="new5">    
     <h3>What does liberty mean to you?</h3>
-    <h4>Embrace your liberty!</h4> 
-<hr>     
+    <h3>Embrace your liberty!</h3> 
+<hr class="new5">     
      <ul class="breadcrumb">
       <li class="breadcrumb-item active">Home</li>
       <li class="breadcrumb-item"><a href="liberty.html">Liberty</a></li>
@@ -106,11 +106,11 @@ hr.new3 {
       <li class="breadcrumb-item"><a href="contact.html">Contact</a></li>
       <li class="breadcrumb-item"><a href="staff.html">Staff</a></li>
      </ul>
-<hr>               
-    </header>
-<hr>    
+<hr class="new5">               
+    </header>    
     <h2>What is The Liberty Emporium?</h2>
-    <h3>A marketplace (emporium) that is free from oppressive restriction or control (liberty).</h3> 
+    <h3>A marketplace (emporium) that is free from oppressive restriction or control (liberty).</h3>
+<hr class="new5">     
    <footer class="w3-container">
     <h5>What is liberty?</h5>
     <p>What does liberty mean to you?</p>
@@ -118,7 +118,7 @@ hr.new3 {
     <img src="images/me.png" alt="Lamont Kimberlin">
     <p class="text-primary">Contact libertymaster at:</p>    
     <a href="mailto:libertymaster@thelibertyemporium.com">libertymaster@thelibertyemporium.com</a>
-<hr>    
+<hr class="new5">    
     <p class="text-info">And don't forget to</p><p class="text-primary">Embrace your liberty!</p>
     <p class="text-primary">&copy; 2025 The Liberty Emporium</p>
     <p>
@@ -136,6 +136,7 @@ hr.new3 {
     </a>
     </p>
    </footer>
+<hr class="new5">   
    </article>
   </main>  
  </body>    
