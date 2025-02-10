@@ -1,11 +1,11 @@
-.header {
+header {
   font-family: "Times New Roman";
   color: white;
   background: black;
   text-align: center;
 }
   
-.body {
+body {
   width: 100%
   height: 100%;
   font-family: "Times New Roman";
@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-.footer {
+footer {
   height: 100%;
   font-family: "Times New Roman";
   padding: 20px;
@@ -31,22 +31,22 @@
   box-sizing: border-box;
 }
 
-.h1 {
+h1 {
   font-size: 2.25em; /* 36px/16=2.25em */
   font-family: Merriweather, serif;
 }
 
-.h2 {
+h2 {
   font-size: 1.875em; /* 30px/16=1.875em */
   font-family: Merriweather, serif;
 }
 
-.h3 {
+h3 {
   font-size: 1.625em; /* 26px/16=1.625em */
   font-family: Merriweather, serif;
 }
  
-.h4 {
+h4 {
   font-size: 1.25em; /* 20px/16=1.25em */
   font-family: "Times New Roman";
 }
@@ -56,7 +56,7 @@ p {
   font-family: "Times New Roman";  
 }
 
-.hr { 
+hr { 
   display: block;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -67,17 +67,17 @@ p {
 }
 
 /* Large rounded lightgreen border */
-.hr.new1 {
+hr.new1 {
   border: 10px solid lightgreen;
   border-radius: 5px;
 }
 
 /* Thick lightblue border */
-.hr.new2 {
+hr.new2 {
   border: 3px solid lightblue;
 }
 
 /* Thick orange border */
-.hr.new3 {
+hr.new3 {
   border: 7px solid orange;
 }
