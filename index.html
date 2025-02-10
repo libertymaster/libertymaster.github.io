@@ -31,6 +31,10 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Times New Roman";
+}
+
 hr { 
   display: block;
   margin-top: 3em;
@@ -41,10 +45,20 @@ hr {
   border-width: 7px;
 }
 
-/* Large rounded green border */
+/* Large rounded lightgreen border */
 hr.new1 {
   border: 10px solid lightgreen;
   border-radius: 5px;
+}
+
+/* Thick lightblue border */
+hr.new2 {
+  border: 3px solid lightblue;
+}
+
+/* Thick orange border */
+hr.new3 {
+  border: 3px solid orange;
 }
   </style>      
  </head>
@@ -53,10 +67,9 @@ hr.new1 {
    <article class="w3-container">
     <header class="w3-container">
     <h1>The Liberty Emporium</h1>
-<hr class="new1">    
+<hr>    
     <h2>What is The Liberty Emporium?</h2>
-    <h3>A marketplace (emporium) that is free from oppressive restriction or control (liberty).</h3>
-<hr class="new1">    		
+    <h3>A marketplace (emporium) that is free from oppressive restriction or control (liberty).</h3>   		
      <ul class="breadcrumb">
       <li class="breadcrumb-item active">Home</li>
       <li class="breadcrumb-item"><a href="liberty.html">Liberty</a></li>
@@ -73,7 +86,7 @@ hr.new1 {
       <li class="breadcrumb-item"><a href="staff.html">Staff</a></li>
      </ul>          
     </header>
-<hr class="new1">
+<hr class="new3">
    <footer class="w3-container">
     <h5>What is liberty?</h5>
     <p>What does liberty mean to you?</p>
