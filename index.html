@@ -14,10 +14,20 @@
 </head>
 <body>
   <main>
-    <button id="theme-toggle" class="btn btn-link btn-sm ml-2 small" type="button">
+    <p class="d-inline-flex gap-1">
+      <button type="button" class="btn" data-bs-toggle="button">Light On/Off</button>
+      <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active</button>
+      <button type="button" class="btn" disabled data-bs-toggle="button">Disabled</button>
+    </p>
+    <p class="d-inline-flex gap-1">
+      <button type="button" class="btn btn-primary" data-bs-toggle="button">Dark On/Off</button>
+      <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active</button>
+      <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled</button>
+    </p>
+<!--    <button id="theme-toggle" class="btn btn-link btn-sm ml-2 small" type="button">
       <span class="d-block-light d-none">{{> "icons/moon"}}</span>
       <span class="d-block-dark d-none">{{> "icons/sun"}}</span>
-    </button>
+    </button>-->
     <article class="w3-container">
     <header class="w3-container">
 <hr>
