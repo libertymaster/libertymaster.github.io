@@ -13,21 +13,13 @@
    <script src="js/script.js"></script>
 </head>
 <body>
-  <main>
-    <p class="d-inline-flex gap-1">
-      <button type="button" class="btn" data-bs-toggle="button">Light On/Off</button>
-      <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active</button>
-      <button type="button" class="btn" disabled data-bs-toggle="button">Disabled</button>
-    </p>
-    <p class="d-inline-flex gap-1">
-      <button type="button" class="btn btn-primary" data-bs-toggle="button">Dark On/Off</button>
-      <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active</button>
-      <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled</button>
-    </p>
-<!--    <button id="theme-toggle" class="btn btn-link btn-sm ml-2 small" type="button">
-      <span class="d-block-light d-none">{{> "icons/moon"}}</span><a target="_blank" href="https://icons8.com/icon/8LM7-CYX4BPD/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      <span class="d-block-dark d-none">{{> "icons/sun"}}</span>
-    </button>-->
+  </main>
+    <div class="d-inline-flex gap-1">
+      <button type="button" id="theme-toggle" class="btn btn-link btn-sm ml-2 small">
+        <img src="images/moon.svg" alt="dark" loading="lazy" span class="d-block-light d-none">Dark</span>
+        <img src="images/sun.svg" alt="light" loading="lazy" span class="d-block-dark d-none">Light</span>
+      </button>
+    </div>
     <article class="w3-container">
     <header class="w3-container">
 <hr>
