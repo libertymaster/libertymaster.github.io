@@ -14,5 +14,7 @@ localStorage.setItem('theme', targetTheme);
 
 (() => {
     const copyrightElement = document.getElementById("copyright");
-    copyrightElement.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" The Liberty Emporium www.thelibertyemporium.com - All Rights Reserved.";
+    copyrightElement.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" The Liberty Emporium";
+    copyrightElement.innerHTML = "www.thelibertyemporium.com";
+    copyrightElement.innerHTML = "All Rights Reserved";
 })();
