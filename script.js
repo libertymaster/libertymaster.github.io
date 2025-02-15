@@ -13,6 +13,6 @@ localStorage.setItem('theme', targetTheme);
 };
 
 (() => {
-    const copyrightElement = document.getElementById("copyright");
-    copyrightElement.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" The Liberty Emporium www.thelibertyemporium.com - All Rights Reserved.";
+	const copyrightElement = document.getElementById("copyright");
+	copyrightElement.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" The Liberty Emporium - All Rights Reserved.";
 })();
