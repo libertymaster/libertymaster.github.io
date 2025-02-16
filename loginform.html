@@ -14,20 +14,6 @@
   <script src="script.js"></script>
 <title>Login | The Liberty Emporium</title>
 <style>
-.animated-rainbow {
-    font-family: Times New Roman Black, Gadget, Times New Roman;
-    background: linear-gradient(to left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
-    animation: rainbow-move-left-right 5s linear infinite alternate;
-    -webkit-background-clip: text;
-    background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
-
-@keyframes rainbow-move-left-right {
-    0% {background-position: 0 0    }
-    100% {background-position: -500px 0}
-}
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -151,25 +137,7 @@ span.psw {
 <body>
   <main>
     <article class="w3-container">
-    <header class="w3-container">
-      <div class="animated-rainbow"style= align="center">
-        <h2>Login</h2>
-        <h4>What does liberty mean to you?</h4>
-        <h4>Embrace your liberty!</h4>
-      </div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="images/rainbow-text.png">The Liberty Emporium</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>     
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" class="fa fa-fw fa-home">Home</a>
-          </li>
-        </ul>
-      </div>  
+    <header class="w3-container"> 
         <h2>Please Login</h2>
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
       <div id="id01" class="modal"> 
