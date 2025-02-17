@@ -43,6 +43,12 @@ h6 {
   font-size: 20px;
 }
 
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-indent: 50px;
+}
+
 header {
   font-family: "Times New Roman", Times, serif;
   color: white;
@@ -56,19 +62,13 @@ body {
   color: white;
 }
 
-p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
-  text-indent: 50px;
-}
-
 footer {
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   color: white;
   background-color: black;
   height: 100%;
-  width: 100%;  
+  width: 100%;
   text-align: center;
 }
 
@@ -87,12 +87,27 @@ footer {
 }
 
 .active {
-  background-color: #04AA6D; /* Add an active/current color */
+  color: #04AA6D; /* Add an active/current color */
+}
+
+.navbar-nav > li{
+  padding-left:28px;
+  padding-right:28px;
+  font-size: 18px;
+}
+
+.navbar-nav > ul{
+  font-size: 18px;
+  color: teal;
 }
 </style>   
 </head>
 <body>
   <main>
+<hr>
+      <div class="login-container" style="float:left;"> 
+        <a href="login.php"><i class="fa fa-user"></i>Login</a>
+      </div>
     <article class="w3-container">
     <header class="w3-container">
       <div class="animated-rainbow"style= align="center">
@@ -124,7 +139,7 @@ footer {
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="history.html">History</a></li>
               <li><a class="dropdown-item" href="ushistory.html">History of the United States</a></li>
-              <li><a class="dropdown-item" href="ushistorybefore1865.html">US History Before 1865</a></li>
+              <li><a class="dropdown-item" class="active" style="color:teal">US History Before 1865</a></li>
               <li><a class="dropdown-item" href="ushistoryafter1865.html">US History After 1865</a></li>
               <li><a class="dropdown-item" href="worldhistory.html">World History</a></li>
             </ul>
