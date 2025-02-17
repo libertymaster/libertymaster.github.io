@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-require('db.php');
+require('regisdb.php');
 // If form submitted, insert values into the database.
 if (isset($_REQUEST['username'])){
         // removes backslashes

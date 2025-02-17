@@ -1,6 +1,6 @@
 <?php
 include("auth.php");
-require('db.php');
+require('regisdb.php');
 ?>
 <!DOCTYPE html>
 <html>
