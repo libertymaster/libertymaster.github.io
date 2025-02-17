@@ -1,25 +1,78 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <title>Contact</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
-   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
-   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-food.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="script.js"></script>
- </head>
- <body>
-  <main>  
-   <article class="w3-container">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-food.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">                  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<title>Contact | The Liberty Emporium</title>
+<style>
+header {
+  font-family: "Times New Roman";
+  color: "text-primary";
+  background-color: black;
+  text-align: center;
+}
+
+body {
+  font-family: "Times New Roman";
+  background-color: black;
+  color: "text-info";
+}
+
+p {
+  font-family: "Times New Roman";
+  border: 2px solid black;
+  width: 90%;
+  height: 100%;
+  text-align: justify;
+  font-size: 18px;
+  text-indent: 50px;
+  text-align: justify;
+  border: 3px solid black;
+}
+
+footer {
+  font-family: "Times New Roman";
+  font-size: 18px;
+  color: "text-primary";
+  background-color: black;
+  height: 100%;  
+  text-align: center;
+}
+
+.animated-rainbow {
+    font-family: "Times New Roman";
+    background: linear-gradient(to left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    animation: rainbow-move-left-right 3s linear infinite alternate;
+    -webkit-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+@keyframes rainbow-move-left-right {
+   background-position: -500px 0}
+}
+
+.active {
+  background-color: #04AA6D; /* Add an active/current color */
+}
+</style>   
+</head>
+<body>
+  <main>
+    <article class="w3-container">
     <header class="w3-container">
-<hr>    
-    <h1>Contact</h1>
+      <div class="animated-rainbow"style= align="center">
+        <h2>Contact</h2>
+        <h4>What does liberty mean to you?</h4>
+        <h4>Embrace your liberty!</h4>
+      </div>    
 <hr>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="container-fluid">
@@ -55,26 +108,29 @@
               <li><a class="dropdown-item" href="ronpaul.html">Ron Paul</a></li>
             </ul>
           </li>                
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" style="float:right">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Staff</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="staff.html">Team Liberty</a></li>
+              <li><a class="dropdown-item" class="active" style="color:teal">Team Liberty</a></li>
               <li><a class="dropdown-item" href="lamont.html">Lamont Michael Kimberlin</a></li>
               <li><a class="dropdown-item" href="petra.html">Petra Christa Theodora Morris</a></li>
               <li><a class="dropdown-item" href="eleanor.html">Eleanor Melody Morris</a></li>
             </ul>
+          </li>  
+          <li class="nav-item" style="float:right">
+            <a class="nav-link" href="contact.html"><i class="fa fa-envelope"></i>Contact</a>           
           </li>
           <li class="nav-item" style="float:right">
-            <a class="nav-link" href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>           
-          </li>
-          <li class="nav-item" style="float:right">
-            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-          </li>
-          <li class="nav-item" style="float:right">
-            <a href="loginform.html"><i class="fa fa-fw fa-user"></i> Login</a>
-          </li>
+            <a href="loginform.html"><i class="fa fa-user"></i>Login</a>
+          </li>  
         </ul>
       </div>
+      </div>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </nav>
 <hr>                    
