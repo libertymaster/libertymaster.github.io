@@ -46,15 +46,10 @@ h6 {
 
 header {
   font-family: "Times New Roman", Times, serif;
-  color: white;
-  background-color: black;
-  text-align: center;
 }
 
 body {
   font-family: "Times New Roman", Times, serif;
-  background-color: black;
-  color: white;
 }
 
 p {
@@ -66,11 +61,8 @@ p {
 footer {
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
-  color: white;
-  background-color: black;
   height: 100%;
   width: 100%;  
-  text-align: center;
 }
 
 .animated-rainbow {
@@ -214,8 +206,10 @@ span.psw {
 <body>
   <main>
     <article class="w3-container">
-    <header class="w3-container"> 
+    <header class="w3-container">
+      <div class="animated-rainbow"style= align="center"> 
         <h2>Please Login</h2>
+      </div>  
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
       <div id="id01" class="modal"> 
         <form class="modal-content animate" action="/action_page.php" method="post">
