@@ -117,19 +117,22 @@ footer {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
   overflow: hidden;
   float: left;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #f2f2f2;
-  text-align: left;
-  padding: 12px 12px;
+  text-align: center;
+  padding: 12px 14px;
   text-decoration: none;
   font-size: 18px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: teal;
 }
 
 /* Change the color of links on hover */
@@ -138,9 +141,9 @@ footer {
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: teal;
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
 }
 </style>   
 </head>
