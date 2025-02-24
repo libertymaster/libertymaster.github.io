@@ -113,22 +113,33 @@ footer {
   margin: 0;
   padding: 12px 14px;
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;  
+  font-size: 18px;
+  width: 100%;
+  background-color: #555;
+  overflow: auto;  
 }
 
 .menu li {
   list-style: none;  
 }
 
-.menu li a {
-  padding: 1em;  
+.menu li a {  
   display: block;
+  float: left;
+  padding: 12px;
   color: white;
-  text-decoration: none;  
+  text-decoration: none;
+  font-size: 18px;
+  width: 20%;
+  text-align: center;  
 }
 
 .menu li a:hover {
   color: teal;
+}
+
+.menu li a.active {
+  background-color: teal;
 }
 
 .mega-menu {
@@ -171,7 +182,15 @@ footer {
 
 .mega-menu .col p {
   margin-bottom: 0;
-}  
+}
+
+@media screen and (max-width: 500px) {
+  .menu li a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 </style>   
 </head>
 <body>
