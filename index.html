@@ -106,6 +106,68 @@ footer {
 
 * {
   box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;  
+}
+.menu li {
+  list-style: none;  
+}
+.menu li a {
+  padding: 1em;  
+  display: block;
+  color: black;
+  text-decoration: none;  
+}
+.menu li a:hover {
+  color: #336699;
+}
+
+.mega-menu {
+  display: flex;    
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #eee; 
+  opacity: 0;  
+  visibility: hidden;  
+}
+.menu li:hover > .mega-menu {
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
+}
+
+.mega-menu .col {
+  padding: 1em;
+}
+.mega-menu .col ul {
+  margin: 0;
+  padding: 0;
+}
+.mega-menu .col li {
+ margin-bottom: 0.75em;
+}
+.mega-menu .col h4 {
+  text-transform: uppercase; 
+  margin: 0 0 1em 0;
+}
+.mega-menu .col a {
+  padding: 0;
+}
+.mega-menu .col img {
+  display: block;
+}
+.mega-menu .col p {
+  margin-bottom: 0;
+}
+.mega-menu .col strong {
+  text-transform: uppercase; 
 }   
 </style>   
 </head>
@@ -120,97 +182,43 @@ footer {
         <h4>Embrace your liberty!</h4>
       </div>
 <hr>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <button data-mdb-button-init class="navbar-toggler px-0" type="button" data-mdb-collapse-init
-      data-mdb-target="#navbarExample3" aria-controls="navbarExample3" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarExample3">
-      <ul class="navbar-nav me-auto ps-lg-0" style="padding-left: 0.15rem">
-        <li class="nav-item">
-          <a class="active"><i class="fa fa-home"></i>Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="liberty.html">Liberty</a>
-        </li>        
-        <li class="nav-item dropdown position-static">
-          <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-            data-mdb-toggle="dropdown" aria-expanded="false">
-            Menu
-          </a>
-          <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="
-                          border-top-left-radius: 0;
-                          border-top-right-radius: 0;
-                        ">
-            <div class="container">
-              <div class="row my-4">
-                <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                  <div class="list-group list-group-flush">
-                    <p class="mb-0 list-group-item text-uppercase font-weight-bold">
-                      News
-                    </p>
-                    <a href="news.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Liberty News</a>
-                    <a href="worldnews.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>World News</a>
-                    <a href="usnews.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>US News</a>
-                    <a href="localnews.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Local News</a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                  <div class="list-group list-group-flush">
-                    <p class="mb-0 list-group-item text-uppercase font-weight-bold">
-                      History
-                    </p>
-                    <a href="history.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>History</a>
-                    <a href="ushistory.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>US History</a>
-                    <a href="ushistorybefore1865.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>US History Before 1865</a>
-                    <a href="ushistoryafter1865.html" class="list-group-item list-group-item-action"><i
-                   class="fas fa-caret-right pe-2"></i>US History After 1865</a>                        
-                    <a href="worldhistory.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>World History</a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
-                  <div class="list-group list-group-flush">
-                    <p class="mb-0 list-group-item text-uppercase font-weight-bold">
-                      History's Heroes
-                    </p>
-                    <a href="marcbloch.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Marc Bloch</a>
-                    <a href="ronpaul.html" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Ron Paul</a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                  <div class="list-group list-group-flush">
-                    <p class="mb-0 list-group-item text-uppercase font-weight-bold">
-                      About
-                    </p>
-                    <a href="about.html" class="list-group-item list-group-item-action">The Liberty Emporium</a>
-                    <a href="staff.html" class="list-group-item list-group-item-action">Team Liberty</a>
-                    <a href="lamont.html" class="list-group-item list-group-item-action">Lamont Kimberlin</a>
-                    <a href="petra.html" class="list-group-item list-group-item-action">Petra Morris</a>
-                    <a href="eleanor.html" class="list-group-item list-group-item-action">Eleanor Morris</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>                    
-        <li class="nav-item">
-          <a class="nav-link" style="text-align:right" href="contact.html"><i class="fa fa-envelope"></i>Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+<nav class="nav">
+  <ul class="menu">
+    <li><a class="active"><i class="fa fa-home"></i>Home</a></li>
+    <li><a href="images/rainbow-text.png"><h4>The Liberty Emporium</h4></a> 
+      <div class="mega-menu">     
+        <div class="col">                  
+          <ul>
+            <li><a href="liberty.html"></a><h4>Liberty</h4></a></li>
+            <li><a href="news.html"><h4>News</h4></a></li>
+            <li><a href="history.html"><h4>History</h4></a></li>
+            <li><a href="ushistory.html">US History</a></li> 
+            <li><a href="ushistorybefore1865.html">US History Before 1865</a></li> 
+            <li><a href="ushistoryafter1865.html ">US History After 1865</a></li> 
+            <li><a href="worldhistory.html">World History</a></li>             
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><a href="heroes.html"><h4>History's Heroes</h4></a></li>
+            <li><a href="marcbloch.html">Marc Bloch</a></li> 
+            <li><a href="ronpaul.html">Ron Paul</a></li>   
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><a href="images/rainbow-text.png"><h4>The Liberty Emporium</h4></a></li>
+            <li><a href="about.html">About</a></li> 
+            <li><a href="staff.html">Team Liberty</a></li> 
+            <li><a href="lamont.html">Lamont Kimberlin</a></li> 
+            <li><a href="petra.html">Petra Morris</a></li>
+            <li><a href="eleanor.html">Eleanor Morris</a></li>                    
+          </ul>
+        </div>
+      </div>   
+    </li>     
+    <li><a href="contact.html"><i class="fa fa-envelope"></i>Contact</a></li>
+  </ul>
 </nav>
 <hr>     
     </header>
