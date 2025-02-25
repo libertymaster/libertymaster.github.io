@@ -135,11 +135,7 @@ footer {
 .menu li a:active {
   background-color: teal;
 }
-.menu li.split {
-  float: right;
-  background-color: teal
-  color: white;
-}
+
 .mega-menu {
   display: flex;    
   justify-content: space-between;
@@ -150,12 +146,6 @@ footer {
   color: white; 
   opacity: 0;  
   visibility: hidden;  
-}
-
-.mega-menu.split {
-  float: right;
-  background-color: teal;
-  color: white;
 }
 
 .menu li:hover > .mega-menu {
@@ -198,12 +188,12 @@ footer {
       </div>
 <hr>
 <nav class="nav">
-  <ul class="menu">
-    <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-    <li><a href="liberty.html">Liberty</a></li>
-    <li><a class="active">News</a></li>
-    <li><a href="images/rainbow-text.png">Menu</a>
-      <div class="mega-menu" class="split">     
+  <ul class="menu" class="nav nav-pills nav-justified">
+    <li><a class="nav-item" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+    <li><a class="nav-item" href="liberty.html">Liberty</a></li>
+    <li><a class="nav-link active">News</a></li>
+    <li><a class="nav-item" href="images/rainbow-text.png">Menu</a>
+      <div class="mega-menu">     
         <div class="col" style="text-align:left">                  
           <ul>
             <div class="animated-rainbow"><li><a href="history.html" style="font-size:x-large" style="color:black">History</a></li></div>
@@ -232,7 +222,7 @@ footer {
         </div>
       </div>   
     </li>     
-    <li><a href="contact.html" class="split" ><i class="fa fa-envelope"></i>Contact</a></li>
+    <li><a class="nav-item" href="contact.html"><i class="fa fa-envelope"></i>Contact</a></li>
   </ul>
 </nav>     
 <hr>
