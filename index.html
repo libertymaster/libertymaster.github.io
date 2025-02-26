@@ -11,36 +11,37 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">                  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/12f0eef082.js" crossorigin="anonymous"></script>
 <title>Home | The Liberty Emporium</title>
 <style>
 h1 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 48px;      
+  font-size: 42px;      
 }
 
 h2 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 44px;
+  font-size: 36px;
 }
 
 h3 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 h4 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 34px;
+  font-size: 28px;
 }
 
 h5 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 h6 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 p {
@@ -50,7 +51,7 @@ p {
 /*  border: 1px solid black;
   font-size: 1.5em;  
   padding: 10px;*/
-  width: 75%;
+  width: 85%;
   margin: 10px auto;
   text-align: justify;  
 }
@@ -68,9 +69,6 @@ header {
   color: white;
   background-color: black;
   text-align: center;
-  padding-left:12px;
-  padding-right:12px;
-  padding-top:12px;
 }
 
 body {
@@ -104,55 +102,45 @@ footer {
     100% {background-position: -500px 0}
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .menu {
-  display: flex;
+  display: inline;
   margin: 0;
+  padding: 0;
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
-  width: 100%;
+  font-size: 20px;
   background-color: #555;
-  overflow: auto;  
+  width: 100%;  
 }
 
 .menu li {
   list-style: none;
-  width: 20%;
-  font-size: 18px;
-  text-align: center;
-  float: left;    
 }
 
 .menu li a {
-  padding: 2px; 
+  padding: 1em;  
   display: block;
   color: white;
   text-decoration: none;  
 }
 
-.menu li a:hover {
+.w3-bar-item a:hover {
   color: darkblue;
 }
 
-.menu li a.active {
+.w3-bar-item a:active {
   background-color: teal;
 }
-
 .mega-menu {
   display: flex;    
   justify-content: space-between;
   position: absolute;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: black; 
+  background: #004453;
+  color: white; 
   opacity: 0;  
   visibility: hidden;  
 }
-
 
 .menu li:hover > .mega-menu {
   opacity: 1;
@@ -161,29 +149,20 @@ footer {
 }
 
 .mega-menu .col {
-  padding: 0px;
+  padding: 1em;
 }
 
 .mega-menu .col ul {
-  margin: 12px;
-  padding: 12px;
-  width: 33.3%;
+  margin: 0;
+  padding: 0;
 }
-
+  
 .mega-menu .col li {
- margin-bottom: 0px;
+  margin-bottom: 0.75em;
 }
 
 .mega-menu .col a {
-  padding: 0px;
-}
-
-.mega-menu .col img {
-  display: block;
-}
-
-.mega-menu .col p {
-  margin-bottom: 0px;
+  padding: 0;
 }
 </style>   
 </head>
@@ -198,44 +177,53 @@ footer {
         <h5>Embrace your liberty!</h5>
       </div>
 <hr>
-<nav class="nav">
+<div class="w3-bar w3-border w3-round w3-card-5 w3-dark-grey">
   <ul class="menu">
-    <li><a class="active"><i class="fa fa-home"></i>Home</a></li>
-    <li><a href="liberty.html">Liberty</a></li>
-    <li><a href="news.html"><i class="fa-thin fa-newspaper"></i>News</a></li>
-    <li><a href="images/rainbow-text.png">Menu</a> 
+    <li>
+      <a class="w3-bar-item w3-button" class="active w3-teal"><i class="fa fa-home"></i>Home</a>
+    </li>
+    <li>
+      <a class="w3-bar-item w3-button" href="liberty.html"><i class="fa-solid fa-flag-usa"></i>Liberty</a>
+    </li>
+    <li>
+      <a class="w3-bar-item w3-button" href="news.html"><i class="fa-regular fa-newspaper"></i>News</a>
+    </li>
+    <li>
+      <a class="w3-bar-item w3-button w3-dark-blue w3-left" href="images/rainbow-text.png"><i class="fa-solid fa-bars"></i>Menu</a>
       <div class="mega-menu">     
-        <div class="col">                  
+        <div class="col" style="text-align:left">                  
           <ul>
-            <li><a href="history.html" class="text-primary">History</a></li>
-            <li><a href="ushistory.html">US History</a></li> 
-            <li><a href="ushistorybefore1865.html">US History Before 1865</a></li> 
-            <li><a href="ushistoryafter1865.html ">US History After 1865</a></li> 
-            <li><a href="worldhistory.html">World History</a></li>             
+            <div class="animated-rainbow"><li><a href="history.html" style="font-size:x-large">History</a></li></div>
+            <li><a href="ushistory.html" style="font-size:large">US History</a></li> 
+            <li><a href="ushistorybefore1865.html" style="font-size:large">US History Before 1865</a></li> 
+            <li><a href="ushistoryafter1865.html" style="font-size:large">US History After 1865</a></li> 
+            <li><a href="worldhistory.html" style="font-size:large">World History</a></li>             
           </ul>
         </div>
-        <div class="col">
+        <div class="col" style="text-align:center">
           <ul>
-            <li><a href="heroes.html" class="text-primary">History's Heroes</a></li>
-            <li><a href="marcbloch.html">Marc Bloch</a></li> 
-            <li><a href="ronpaul.html">Ron Paul</a></li>   
+            <div class="animated-rainbow"><li><a href="heroes.html" style="font-size:x-large">History's Heroes</a></li></div>
+            <li><a href="marcbloch.html" style="font-size:large">Marc Bloch</a></li> 
+            <li><a href="ronpaul.html" style="font-size:large">Ron Paul</a></li>   
           </ul>
         </div>
-        <div class="col">
+        <div class="col" style="text-align:right">
           <ul>
-            <li><a href="images/rainbow-text.png" class="text-primary">The Liberty Emporium</a></li>
-            <li><a href="about.html">About</a></li> 
-            <li><a href="staff.html">Team Liberty</a></li> 
-            <li><a href="lamont.html">Lamont Kimberlin</a></li> 
-            <li><a href="petra.html">Petra Morris</a></li>
-            <li><a href="eleanor.html">Eleanor Morris</a></li>                    
+            <div class="animated-rainbow"><li><a href="images/rainbow-text.png" style="font-size:x-large">The Liberty Emporium</a></li></div>
+            <li><a href="about.html" style="font-size:large">About</a></li> 
+            <li><a href="staff.html" style="font-size:large">Team Liberty</a></li> 
+            <li><a href="lamont.html" style="font-size:large">Lamont Kimberlin</a></li> 
+            <li><a href="petra.html" style="font-size:large">Petra Morris</a></li>
+            <li><a href="eleanor.html" style="font-size:large">Eleanor Morris</a></li>                    
           </ul>
         </div>
       </div>   
     </li>     
-    <li><a href="contact.html"><i class="fa fa-envelope"></i>Contact</a></li>
+    <li>
+      <a class="w3-bar-item w3-button w3-right" href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a>
+    </li>
   </ul>
-</nav>
+</div>     
 <hr>     
     </header>
     <div class="text-primary">    		
