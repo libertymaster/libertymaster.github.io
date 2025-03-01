@@ -71,6 +71,70 @@ header {
   text-align: center;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
 body {
   font-family: "Times New Roman", Times, serif;
   background-color: black;
@@ -172,17 +236,16 @@ w3-bar-item:active {
 </head>
 <body>
   <main>
-<hr>
     <article class="w3-container">
     <header class="w3-container">
       <div class="animated-rainbow"style= align="center">
-        <h1>About</h1>
-        <h5 style="text-align:center;">What is The Liberty Emporium?</h5>
-        <h5 style="text-align:center;">What is liberty?</h5>
-        <h5 style="text-align:center;">What does liberty mean to you?</h5>
-        <h5 style="text-align:center;">Embrace your liberty!</h5>
-      </div>    
-<hr>
+<hr class="solid">       
+      <div class="about-section">
+        <h1>About Us</h1>          		
+        <h5>What is The Liberty Emporium?</h5>
+          <p>A marketplace (emporium) that is free from oppressive restriction or control (liberty). The Liberty Emporium is a safe and liberated space where people can trade, contribute content, share information and ideas, or just check it out.</p>
+      </div>
+<hr class="solid">
 <div class="w3-bar w3-border w3-round w3-card-5 w3-dark-grey">
   <ul class="menu">
     <li>
@@ -230,14 +293,59 @@ w3-bar-item:active {
     </li>
   </ul>
 </div>     
-<hr>
+<hr class="solid">      
+<h2 style="text-align:center">Our Team</h2>
+<h2 style="text-align:center">Team Liberty</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/me.png" alt="Lamont K" style="width:100%">
+      <div class="container">
+        <h2>Lamont Kimberlin</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Lamont Kimberlin is Founder, Sole Proprietor, and Chief Editor of The Liberty Emporium.</p>
+        <p>libertymaster@thelibertyemporium.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Petra Christa Theodora Morris</h2>
+        <p class="title">Art Director</p>
+        <p>Petra is a Contributing Editor of The Liberty Emporium. She is also the founder and Chief Editor of The Liberty Emporium's Butthead Division.</p>
+        <p>eleanormelody12@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div> 
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Eleanor Melody Morris</h2>
+        <p class="title">Designer</p>
+        <p>Eleanor is a Contributing Editor of The Liberty Emporium. She is also the founder and Chief Editor of The Liberty Emporium's Poetry Division.</p>
+        <p>eleanormelody12@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
     </header>
+        <h5 style="text-align:center;">What is The Liberty Emporium?</h5>
+        <h5 style="text-align:center;">What is liberty?</h5>
+        <h5 style="text-align:center;">What does liberty mean to you?</h5>
+        <h5 style="text-align:center;">Embrace your liberty!</h5>
+      </div>    
     <div class="animated-rainbow"style= align="center">    		
     <h5 style="text-align:center;">What is The Liberty Emporium?</h5>
     <h5 style="text-align:center;">A marketplace (emporium) that is free from oppressive restriction or control (liberty).</h5>
     <h5 style="text-align:center;">The Liberty Emporium is a safe and liberated space where people can trade, contribute content, share information, ideas, or just check it out.</h5>
     </div>             
-<hr>    
+<hr class="solid">    
     <footer class="w3-container">
     <address>
     <p class="text-info" style="text-align:center;"><br>
