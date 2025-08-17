@@ -106,7 +106,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: navbar-dark-grey;
+  background-color: dark-grey;
 }
 
 li {
@@ -140,7 +140,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -181,9 +181,11 @@ hr.solid {
         <h2>Embrace your liberty!</h2>
 <hr class="solid">        
       </div>  
-        <nav class="navbar navbar-expand-sm bg-dark-grey navbar-dark-grey">
+        <nav class="navbar navbar-inverse">
           <div class="container-fluid">
+		    <div class="navbar-header">
             <a class="navbar-brand" href="#">TLE</a>
+			</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -204,8 +206,8 @@ hr.solid {
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-bars"></i>History Menu</a>
                   <ul class="dropdown-menu">
-				    <li><a class="dropdown-item" href="marcbloch.html" style="font-size:large">Marc Bloch</a></li> 
-                    <li><a class="dropdown-item" href="ronpaul.html" style="font-size:large">Ron Paul</a></li>
+				    <li><a class="dropdown-item" href="marcbloch.html">Marc Bloch</a></li> 
+                    <li><a class="dropdown-item" href="ronpaul.html">Ron Paul</a></li>
                     <li><a class="dropdown-item" href="#">Frederick Douglass</a></li>
                     <li><a class="dropdown-item" href="#">The Soldier</a></li>
                     <li><a class="dropdown-item" href="#">Oskar Schindler</a></li>
@@ -224,6 +226,7 @@ hr.solid {
 				<li class="nav-item dropdown">
 				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-bars"></i>Contact</a>
 				  <ul class="dropdown-menu">
+				  <ul class="nav navbar-nav navbar-right">
 				    <li><a class="dropdown-item" href="staff.html">Team Liberty</a></li> 
                     <li><a class="dropdown-item" href="lamont.html">Lamont Kimberlin</a></li> 
                     <li><a class="dropdown-item" href="petra.html">Petra Morris</a></li>
