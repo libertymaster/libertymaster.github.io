@@ -66,38 +66,54 @@ function myFunction() {
   let x = document.body;
   x.classList.toggle("w3-black");
 }
-</script>	  
-        <nav class="navbar navbar-inverse">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link w3-teal active"><i class="fa fa-home"></i>Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="liberty.html"><i class="fa-solid fa-flag-usa"></i>Liberty</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html"><i class="fa-regular fa-newspaper"></i>News</a></li>
-				<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>	
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-bars"></i>History Menu</a>
-				    <li><a class="dropdown-item" href="marcbloch.html">Marc Bloch</a></li> 
-                    <li><a class="dropdown-item" href="ronpaul.html">Ron Paul</a></li>
-                    <li><a class="dropdown-item" href="#">Frederick Douglass</a></li>
-                    <li><a class="dropdown-item" href="#">The Soldier</a></li>
-                    <li><a class="dropdown-item" href="#">Oskar Schindler</a></li>
-                </li>
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-bars"></i>More History</a>
-				    <li><a class="dropdown-item" href="history.html">History</a></li>
-                    <li><a class="dropdown-item" href="ushistory.html">US History</a></li> 
-                    <li><a class="dropdown-item" href="ushistorybefore1865.html">US History Before 1865</a></li> 
-                    <li><a class="dropdown-item" href="ushistoryafter1865.html">US History After 1865</a></li> 
-                    <li><a class="dropdown-item" href="worldhistory.html">World History</a></li>
-			    </li>
-				<li class="nav-item dropdown navbar-right">
-				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-bars"></i>Contact</a>
-				    <li><a class="dropdown-item" href="staff.html">Team Liberty</a></li> 
-                    <li><a class="dropdown-item" href="lamont.html">Lamont Kimberlin</a></li> 
-                    <li><a class="dropdown-item" href="petra.html">Petra Morris</a></li>
-                    <li><a class="dropdown-item" href="eleanor.html">Eleanor Morris</a></li>   
-				</li>
-			  </ul>	
-        </nav>  		
+</script>
+<div class="w3-bar w3-border w3-round w3-card-5 w3-dark-grey">
+  <ul class="menu">
+    <li>
+      <a class="w3-bar-item w3-button active" href="index.html"><i class="fa fa-home"></i>Home</a>
+    </li>
+    <li>
+      <a class="w3-bar-item w3-button" href="liberty.html"><i class="fa-solid fa-flag-usa"></i>Liberty</a>
+    </li>
+    <li>
+      <a class="w3-bar-item w3-button" href="news.html"><i class="fa-regular fa-newspaper"></i>News</a>
+    </li>
+    <li>
+      <a class="w3-bar-item w3-button w3-dark-blue w3-left" href="images/rainbow-text.png"><i class="fa-solid fa-bars"></i>Menu</a>
+      <div class="mega-menu">     
+        <div class="col" style="text-align:left">                  
+          <ul>
+            <div class="animated-rainbow"><li><a href="history.html" style="font-size:x-large">History</a></li></div>
+            <li><a href="ushistory.html" style="font-size:large">US History</a></li> 
+            <li><a href="ushistorybefore1865.html" style="font-size:large">US History Before 1865</a></li> 
+            <li><a href="ushistoryafter1865.html" style="font-size:large">US History After 1865</a></li> 
+            <li><a href="worldhistory.html" style="font-size:large">World History</a></li>             
+          </ul>
+        </div>
+        <div class="col" style="text-align:center">
+          <ul>
+            <div class="animated-rainbow"><li><a href="heroes.html" style="font-size:x-large">History's Heroes</a></li></div>
+            <li><a href="marcbloch.html" style="font-size:large">Marc Bloch</a></li> 
+            <li><a href="ronpaul.html" style="font-size:large">Ron Paul</a></li>   
+          </ul>
+        </div>
+        <div class="col" style="text-align:right">
+          <ul>
+            <div class="animated-rainbow"><li><a href="images/rainbow-text.png" style="font-size:x-large">The Liberty Emporium</a></li></div>
+            <li><a href="about.html" style="font-size:large">About</a></li> 
+            <li><a href="staff.html" style="font-size:large">Team Liberty</a></li> 
+            <li><a href="lamont.html" style="font-size:large">Lamont Kimberlin</a></li> 
+            <li><a href="petra.html" style="font-size:large">Petra Morris</a></li>
+            <li><a href="eleanor.html" style="font-size:large">Eleanor Morris</a></li>                    
+          </ul>
+        </div>
+      </div>   
+    </li>     
+    <li>
+	  <a class="w3-bar-item w3-button w3-right" href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a>
+    </li>
+  </ul>
+</div>	    		
     </header>
     <div class="animated-rainbow">
 <hr class="solid">
