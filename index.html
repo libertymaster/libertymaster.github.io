@@ -50,12 +50,19 @@ hr.solid {
     <article class="w3-container">
     <header class="w3-container">
       <div class="animated-rainbow" style="text-align: center;">
+	  <button class="w3-button w3-light-grey" onclick="myFunction()">Toggle dark mode</button> 
 <hr class="solid">
         <h1>The Liberty Emporium</h1>
         <h2>What does liberty mean to you?</h2>
         <h2>Embrace your liberty!</h2>
 <hr class="solid">        
-      </div>  
+      </div>
+<script>
+function myFunction() {
+  let x = document.body;
+  x.classList.toggle("w3-black");
+}
+</script>	  
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">TLE</a>
@@ -100,16 +107,7 @@ hr.solid {
               </ul>
             </div>
           </div>
-        </nav>  
-<button class="w3-button w3-light-grey" onclick="myFunction()">Toggle dark mode</button>
-</div>
-
-<script>
-function myFunction() {
-  let x = document.body;
-  x.classList.toggle("w3-black");
-}
-</script>		
+        </nav>  		
     </header>
     <div class="animated-rainbow">
 <hr class="solid">
