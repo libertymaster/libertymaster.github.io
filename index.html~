@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!DOCTYPE html
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">   
@@ -13,8 +13,10 @@
   <script src="https://kit.fontawesome.com/12f0eef082.js" crossorigin="anonymous"></script>
 <title>Home | The Liberty Emporium</title>
 <style>
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Times New Roman", Times, serif
+body, h1, h2, h3, h4, h5, h6  {
+  font-family: "Times New Roman", Times, serif;
+}
+
 /*  border: 1px solid black;
   font-size: 1.5em;  
   padding: 10px;*/
@@ -36,7 +38,6 @@ header {
   color: white;
   background-color: black;
   text-align: center;
-}
 
 body {
   font-family: "Times New Roman", Times, serif;
@@ -108,17 +109,17 @@ li.dropdown {
 }
 
 .animated-rainbow {
-  font-family: "Times New Roman", Times, serif;
-  background: linear-gradient(to left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
-  animation: rainbow-move-left-right 5s linear infinite alternate;
-  webkit-background-clip: text;
-  background-clip: text;
-  webkit-text-fill-color: transparent;
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(to left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    animation: rainbow-move-left-right 5s linear infinite alternate;
+    webkit-background-clip: text;
+    background-clip: text;
+    webkit-text-fill-color: transparent;
 }
 
 @keyframes rainbow-move-left-right {
-  0% {background-position: 0 0    }
-  100% {background-position: -500px 0}
+    0% {background-position: 0 0    }
+    100% {background-position: -500px 0}
 }
 
 .w3-bar-item a:hover {
