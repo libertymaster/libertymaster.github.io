@@ -1,31 +1,42 @@
-:root {
+.root {
   color-scheme: dark;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Times New Roman", Times, serif;
-/*  border: 1px solid black;
-  font-size: 1.5em;  
-  padding: 10px;
-  background-color: black;*/
-  width: 85%;
-  margin: 10px auto;
-  text-align: justify;  
+body { 
+  background-color: black;
 }
 
-/*.none {
-  text-justify: none;
-}*/
-
-.auto {
-  text-justify: auto;
+div.grid-container { 
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;                             /* Space between items */
 }
 
-header {
-  font-family: "Times New Roman", Times, serif;
-  /*background-color: black;*/
+.grid-item {
+  background-color: lightblue;
+  padding: 40px;
   text-align: center;
 }
+
+/* Selects all <p> elements */
+p {
+  color: white;             /* Dark blue-grey text */
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.6;           /* Improves readability */
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;     /* Light grey border */
+  padding: 20px;              /* Space inside the border */
+  margin: 15px auto;          /* Space outside the border, centered */
+  border-radius: 8px;         /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
 
 body {
   font-family: "Times New Roman", Times, serif;
