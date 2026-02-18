@@ -27,44 +27,49 @@
         <h4>Embrace your liberty!</h4>
 <hr class="solid">        
       </div>
-  <div class="w3-bar w3-dark-grey">
-    <a href="index.html" class="w3-bar-item w3-button fa-home">Home</a>
-    <a class="w3-bar-item w3-button w3-teal active" href="liberty.html"><i class="fa-solid fa-flag-usa"></i>Liberty</a>
-	<a class="w3-bar-item w3-button" href="news.html"><i class="fa-regular fa-newspaper"></i>News</a>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button">History's Heroes</button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="heroes.html" class="w3-bar-item w3-button">Heroes</a>
-        <a href="marcbloch.html" class="w3-bar-item w3-button">Marc Bloch</a>
-        <a href="ronpaul.html" class="w3-bar-item w3-button">Ron Paul</a>
-		<a href="" class="w3-bar-item w3-button">The Soldier</a>
-        <a href="" class="w3-bar-item w3-button">Frederick Douglass</a>
-	    <a href="" class="w3-bar-item w3-button">Oskar Schindler</a>
-	  </div>
-    </div>		
-    <div class="w3-dropdown-hover">
-      <button class="w3-button">History Menu</button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="history.html" class="w3-bar-item w3-button">History</a>
-        <a href="ushistory.html" class="w3-bar-item w3-button">US History</a>
-        <a href="ushistorybefore1865.html" class="w3-bar-item w3-button">US History Before 1865</a>
-		<a href="ushistoryafter1865.html" class="w3-bar-item w3-button">US History After 1865</a>
-      </div>
-    </div>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button">About Us</button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="images/rainbow-text.png" class="w3-bar-item w3-button">The Liberty Emporium</a>
-        <a href="about.html" class="w3-bar-item w3-button">About</a>
-        <a href="staff.html" class="w3-bar-item w3-button">Team Liberty</a>
-		<a href="lamont.html" class="w3-bar-item w3-button">Lamont Kimberlin</a>
-		<a href="noah.html" class="w3-bar-item w3-button">Noah Kimberlin</a>
-		<a href="petra.html" class="w3-bar-item w3-button">Petra Morris</a>
-		<a href="eleanor.html" class="w3-bar-item w3-button">Eleanor Morris</a>
-      </div>
-    </div>
-	<a class="w3-bar-item w3-button w3-right" href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a>
-  </div>	  	  
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-primary fa-home" href="index.html">Home</button>
+  <button type="button" class="btn btn-primary fa-solid fa-flag-usa" href="liberty.html">Liberty</button>
+  <button type="button" class="btn btn-primary fa-regular fa-newspaper" href="news.html">News</button>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="historyheroes.html">
+      History's Heroes
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="marcbloch.html">Marc Bloch</a></li>
+      <li><a class="dropdown-item" href="ronpaul.html">Ron Paul</a></li>
+      <li><a class="dropdown-item" href="fdouglass.html">Frederick Douglass</a></li>
+      <li><a class="dropdown-item" href="soldier.html">The Soldier</a></li>
+      <li><a class="dropdown-item" href="oschindler.html">Oskar Schindler</a></li>
+    </ul>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="historyheroes.html">
+      US History
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="marcbloch.html">US History Before 1865</a></li>
+      <li><a class="dropdown-item" href="ronpaul.html">US History After 1865</a></li>
+    </ul>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="">
+      World History
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="">Mesopotamia</a></li>
+      <li><a class="dropdown-item" href="">Egypt</a></li>
+      <li><a class="dropdown-item" href="">Western Civilization</a></li>
+    </ul>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="about.html">
+      About Us
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="staff.html">Team Liberty</a></li>
+      <li><a class="dropdown-item" href="lamont.html">Lamont Kimberlin</a></li>
+      <li><a class="dropdown-item" href="noah.html">Noah Kimberlin</a></li>
+      <li><a class="dropdown-item" href="petra.html">Petra Morris</a></li>
+      <li><a class="dropdown-item" href="eleanor.html">Eleanor Morris</a></li>
+    </ul>           
+  </div>
+  <button type="button" class="btn btn-primary fa-solid fa-envelope" href="contact.html">Contact</button>  
+</div>	  	  
 <!--<script>
 function myFunction() {
   let x = document.body;
