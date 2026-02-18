@@ -1,9 +1,12 @@
-.root {
-  color-scheme: dark;
-}
-
 body { 
   background-color: black;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 600px;           /* Example height for the container */
 }
 
 div.grid-container { 
