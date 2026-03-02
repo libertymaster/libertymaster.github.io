@@ -33,19 +33,53 @@ p {
   color: white;
 }
 
-button.hover, a.hover {
+img {
+  display: block;
+  margin: auto;
+}
+
+.navbar {
+  overflow: visible;
+  background-color: #333;
+}
+
+.navbar a {
+  display: block;
+  color: darkgray;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
   background-color: black;
   color: white;
 }
 
-a.active {
+.navbar a.active {
   background-color: orange;
   color: white;
 }
 
-img {
-  display: block;
-  margin: auto;
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    display: block;
+  }
 }
 
 .animated-rainbow {
@@ -78,7 +112,17 @@ img {
   <script src="https://www.w3schools.com/lib/w3.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/12f0eef082.js" crossorigin="anonymous"></script>
-<div class="navbar w3-container w3-teal">
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+<div class="navbar w3-container w3-teal" id="myTopnav">
   <a class="w3-bar-item w3-button w3-deep-orange active w3-large text-start">Home<i class="fa fa-home"></i></a>
   <div class="w3-dropdown-hover w3-large">
   <button class="w3-button">News
