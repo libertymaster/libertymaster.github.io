@@ -39,6 +39,7 @@ p {
   line-height: 1.5;
   font-size: 1.25rem;
   color: white;
+  text-align: justify;
 }
 
 img {
@@ -115,7 +116,14 @@ img {
   <script src="https://www.w3schools.com/lib/w3.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/12f0eef082.js" crossorigin="anonymous"></script>
-  <script src = "https://www.youtube.com/iframe_api"></script>  
+  <script src = "https://www.youtube.com/iframe_api"></script>
+  <script>
+  // Get the current year
+  const currentYear = new Date().getFullYear();
+  
+  // Find the element with id="year" and set its text
+  document.getElementById('year').textContent = currentYear;
+</script>  
     </main>
   <footer>                        
     <div class="flex-container w3-container w3-black"> 
@@ -152,7 +160,7 @@ img {
                 alt="Valid CSS!">
         </a>
         </p>
-        <p class="text-center">&copy; 2022 - 2026 The Liberty Emporium - All Rights Reserved.</p>
+        <p>&copy; <span id="year">2022 - 2026</span> The Liberty Emporium - All Rights Reserved.</p>
         <p class="mb-0 text-center"><a href="#">Back to top</a></p>
     </div>        
   </footer>
