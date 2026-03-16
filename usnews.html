@@ -16,22 +16,42 @@
 header {
   font-family: "Times New Roman", Times, serif;
   background-color: black;
+  color: white;
   text-align: center;
-}
-
-img {
-  display: block;
-  margin: auto;
 }
 
 body {
   color: white;
   background-color: black;
   font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+main {
+  color: white;
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+article {
+  color: white;
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+h1 {
+  text-align: left;
+}
+
+h6 {
+  text-align: center;
 }
 
 p {    
   font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
   font-size: 1.25rem;
   color: white;
 }
@@ -49,6 +69,10 @@ figcaption.ex1 {
   padding: 35px;
 }
 
+.single-line {
+    white-space: nowrap;
+}
+
 .animated-rainbow {
     font-size: 42px;
     font-family: Arial Black, Gadget, sans-serif;
@@ -59,7 +83,7 @@ figcaption.ex1 {
    -webkit-text-fill-color: transparent;
 }
 @keyframes rainbow-move-left-right {
-    0% {backgroBloch’s legacy goes well beyond the Annales, or today’s Marc Bloch Universities. In fact, he is undoubtedly one of the most overlooked heroes of the 20th Century. He forever changed the way history is perceived, redefining what it means to be a historian.und-position: 0 0    }
+    0% {background-position: 0 0    }
     100% {background-position: -500px 0}
 }
 </style>
@@ -72,105 +96,81 @@ figcaption.ex1 {
   <p>The Liberty Beacon</p>               
   <p>Investigating the news through the telescope of history.</p>
   <p>Analyzing it under the microscope of liberty.</p>
-  <h1>US News</h1>
-  <h2>U.S. Sends More Forces to the Middle East as war with Iran Intensifies</h2>
-</div>
-  </div>
+
+  </head>
+<body>
+    <div class="container">
+      <header class="border-bottom lh-5 py-8 border-top lh-5 py-8">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1 text-start">
+            <a style="color: white; font-size: 1.25rem; text-align: left;" href="subscribe.html">Subscribe</a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-decoration-none" style="color: white; font-size: 2.55rem;"><img src="images/liberty_articulator_thumbnail_150x150.png" class="img-thumbnail single-line" alt="liberty articulator logo" loading="lazy">The Liberty Articulator</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="btn btn-sm btn-outline-secondary link-light" style="color: white; font-size: 1.25rem;" href="signup.html">Sign up</a>
+          </div>
+        </div>
+      </header>
+      <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link text-start w3-hover-dark-gray" style="color: white; font-size: 1.25rem;" href="index.html">Home</a>
+          <a class="nav-item nav-link w3-hover-dark-gray active w3-food-pumpkin" style="color: white; font-size: 1.25rem;" href="usnews.html">U.S.</a>
+          <a class="nav-item nav-link w3-hover-dark-gray" style="color: white; font-size: 1.25rem;" href="worldnews.html">World</a>
+          <a class="nav-item nav-link w3-hover-dark-gray" style="color: white; font-size: 1.25rem;" href="politics.html">Politics</a>
+          <a class="nav-item nav-link w3-hover-dark-gray" style="color: white; font-size: 1.25rem;" href="opinion.html">Opinion</a>          
+          <a class="nav-item nav-link w3-hover-dark-gray" style="color: white; font-size: 1.25rem;" href="about.html">Team Liberty</a>
+          <a class="nav-item nav-link text-end w3-hover-dark-gray" style="color: white; font-size: 1.25rem;" href="contact.html">Contact</a>
+        </nav>            
+      </div>     
+    </div>
+      <p class="text-center" style="font-size: 1.25rem;">
+      Investigating the news under the microscope of liberty.
+      </p>
+      <p class="text-center" style="font-size: 1.25rem;">
+      Analyzing it through the telescope of history.
+      </p>    
+    <main class="container w3-black animated-rainbow">
+      <div class="p-4 p-md-5 mb-4 rounded">
+        <div class="col-lg-6 px-0">
+          <h1 style="color: white; font-family: Times New Roman, Times, serif;">US News</h1>
+          <h2 class="fst-italic" style="color: white; font-family: Times New Roman, Times, serif;">U.S. Sends More Forces to the Middle East as war with Iran Intensifies</h2>
+<p style="color: white;">The chairman of the Joint Chiefs of Staff, Gen. Dan Caine, acknowledged the possibility of an extended campaign, while the announcement was made that six U.S. service members have been killed in the conflict. In his first public event since the fighting began on Saturday Trump stated,</p>
+<blockquote style="color: white;">Whatever the time is, it’s OK, whatever it takes. Right from the beginning, we projected four to five weeks, but we have the capability to go far longer than that.</blockquote>
+<p style="color: white;">Secretary of State Marco Rubio echoed Trump’s prediction that the fighting would continue. He said that the United States would continue to strike Iran until it had achieved its objectives, including destroying Iran’s ballistic missile capabilities.</p>          
+<blockquote style="color: white;">The hardest hits are yet to come from the U.S. military. The next phase will be even more punishing on Iran than it is right now.</blockquote>         
 <hr class="solid">  
-<body style="background-color: black;">
   <script src="https://www.w3schools.com/lib/w3.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/12f0eef082.js" crossorigin="anonymous"></script>
-<div class="navbar w3-container w3-teal">
-  <a href="index.html" class="w3-bar-item w3-button w3-large text-start">Home<i class="fa fa-home"></i></a>
-  <div class="w3-dropdown-hover w3-large">
-  <button class="w3-button w3-deep-orange active">News
-    <i class="fa fa-newspaper-o" aria-hidden="true""></i>
-  </button>
-  <div class="w3-dropdown-content w3-bar-block w3-border">
-    <a class="w3-bar-item w3-button w3-deep-orange active" href="usnews.html">US News</a>
-    <a class="w3-bar-item w3-button" href="worldnews.html">World News</a>
-    <a class="w3-bar-item w3-button" href="coverthistoryiran.html">Blast From the Past</a>
-  </div>
-  </div>
-  <div class="w3-dropdown-hover w3-large">
-  <button class="w3-button">History's Heroes
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="w3-dropdown-content w3-bar-block w3-border">     
-    <a class="w3-bar-item w3-button w3-deep-orange active">Marc Bloch</a>
-    <a class="w3-bar-item w3-button" href="ronpaul.html">Ron Paul</a>
-    <a class="w3-bar-item w3-button" href="fdouglass.html">Frederick Douglass</a> 
-  </div>
-  </div>
-  <div class="w3-dropdown-hover">
-  <button class="w3-button w3-large text-center">US History
-    <i class="fa fa-solid fa-flag-usa"></i>
-  </button>
-  <div class="w3-dropdown-content w3-bar-block w3-border">
-    <a class="w3-bar-item w3-button" href="ushistorybefore1865.html">US History Before 1865</a>
-    <a class="w3-bar-item w3-button" href="ushistoryafter1865.html">US History After 1865</a>
-  </div>
-  </div>
-  <div class="w3-dropdown-hover w3-large">
-  <button class="w3-button">World History
-    <i class="fa fa-solid fa-earth-americas"></i>
-  </button>
-  <div class="w3-dropdown-content w3-bar-block w3-border">
-    <a class="w3-bar-item w3-button" href="mesopotamia.html">Mesopotamia</a>
-    <a class="w3-bar-item w3-button" href="egypt.html">Egypt</a>
-    <a class="w3-bar-item w3-button" href="westernciv.html">Western Civilization</a>
-  </div>
-  </div>
-  <div class="w3-dropdown-hover w3-large">
-  <button class="w3-button text-end">Team Liberty
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="w3-dropdown-content w3-bar-block w3-border"> 
-    <a class="w3-bar-item w3-button" href="about.html">About Us</a>
-    <a class="w3-bar-item w3-button" href="lamont.html">Lamont Kimberlin</a>
-    <a class="w3-bar-item w3-button" href="noah.html">Noah Kimberlin</a>
-    <a class="w3-bar-item w3-button" href="petra.html">Petra Morris</a>
-    <a class="w3-bar-item w3-button" href="eleanor.html">Eleanor Morris</a>
-  </div>
-  </div>
-  <a href="contact.html" class="w3-bar-item w3-button w3-large text-end"><i class="fa-solid fa fa-fw fa-envelope"></i>Contact</a>  
-</div>
-</header>     
-<hr class="solid">      
-  <div class="animated-rainbow">      
-    <p>
-      10 Mar 2015
-        - <a href="lamont.html">Lamont Michael Kimberlin</a>
-    </p>
-  </div>
-<div class="w3-container w3-center">
-  <p>The chairman of the Joint Chiefs of Staff, Gen. Dan Caine, acknowledged the possibility of an extended campaign, while the announcement that six U.S. service members have been killed in the conflict.</p>
-  <p>“Whatever the time is, it’s OK, whatever it takes,” Mr. Trump said at the White House, in his first public event since the fighting began on Saturday. “Right from the beginning, we projected four to five weeks, but we have the capability to go far longer than that.”</p>
-  <p>Speaking to reporters on Capitol Hill, Secretary of State Marco Rubio echoed Mr. Trump’s prediction that the fighting would continue, saying “the hardest hits are yet to come from the U.S. military.”</p>
-  <p>“The next phase will be even more punishing on Iran than it is right now,” Mr. Rubio said ahead of a classified briefing with senior members of Congress. He said that the United States would continue to strike Iran until it had achieved its objectives, including destroying Iran’s ballistic missile capabilities.</p>
-<hr class="solid">   
-<div class="animated-rainbow">
-    <p class="text-center"><br>
-    What does liberty mean to you?<br>
-    Embrace your liberty!
-    </p> 
-</body>      
-  <div class="flex-container w3-container w3-black">
-    <footer> 
-      <address>
+  <script src = "https://www.youtube.com/iframe_api"></script>
+  <script>
+  // Get the current year
+  const currentYear = new Date().getFullYear();
+  privacy.html
+  // Find the element with id="year" and set its text
+  document.getElementById('year').textContent = currentYear;
+</script>  
+    </main>
+  <footer>                        
+    <div class="flex-container w3-container w3-black"> 
+      <address>    
         <p class="text-center"><br>
         Written by<br>
         Lamont Michael Kimberlin<br>
-        Midwest<br>
-        USA<br>
+        The Liberty Emporium<br>
+        777 Liberty Ave<br>
+        Liberty, Illinois 67776<br>
+        United States<br>
         Contact via email at:<br>
         <a href="mailto:libertymaster@thelibertyemporium.com">libertymaster@thelibertyemporium.com</a>
         </p>
       </address>
-    <div class="flex-container">
-      <img src="images/me.png" alt="Portrait of Lamont Kimberlin" class="center">
-    </div> 
+    </div>      
+      <div class="flex-container">
+        <img src="images/me.png" alt="Portrait of Lamont Kimberlin" class="center">
+      </div> 
         <p class="text-center"><br>
         And don't forget to...<br>
         Embrace your liberty!
@@ -188,12 +188,18 @@ figcaption.ex1 {
             src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
             alt="Valid CSS!">
     </a>
-    </p> 
-        <p class="text-center"><br>
-        &copy; 2022 - 2026 The Liberty Emporium - All Rights Reserved.
-        </p>
-        <p class="mb-0 text-center"><a href="#">Back to top</a></p>
-    </footer>
-  </div>
-</div>  
+    </p>                               
+      <div class="container">
+        <div class="row my-3">
+          <div class="col-12 text-center">
+          <p class="text-center"><br>
+          &copy; 2022 - 2026 The Liberty Emporium<br>
+          All Rights Reserved.
+          </p>
+          </div>
+        </div>
+      </div>
+        <p class="mb-0 text-center"><a href="#">Back to top</a></p>        
+  </footer>
+</body>      
 </html>
