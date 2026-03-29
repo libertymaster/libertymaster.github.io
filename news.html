@@ -15,9 +15,14 @@
 <style>
 * { box-sizing: border-box; }
 /* specifically for the body and html elements */
+
+border: 4px solid black;
+
 html {
   margin: 0;
   padding: 0;
+  border: 4px solid white; 
+  border-radius: 10px;  
 }
 
 .full-width-element {
@@ -26,11 +31,22 @@ html {
   padding: 20px; /* Example padding for content */
 }
 
+aside {   
+  margin-top: 16px;
+  margin-right: 8px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  border: 4px solid white; 
+  border-radius: 50px 100px 10px; 
+}
+ 
 header {
   font-family: "Times New Roman", Times, serif;
   background-color: black;
   color: white;
   text-align: center;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 body {
@@ -56,6 +72,21 @@ article {
   line-height: 1.5;
 }
 
+footer {
+  max-height: 200px;
+  max-width: 150px;
+}
+
+section { 
+  min-height: 200px;
+  margin-top: 16px;
+  margin-right: 8px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  border: 4px solid white; 
+  border-radius: 50px 100px 10px;
+}
+
 h1 {
   text-align: left;
 }
@@ -64,7 +95,11 @@ h6 {
   text-align: center;
 }
 
-p {    
+p {
+  padding-top: 16px;
+  padding-right: 12px;
+  padding-bottom: 16px;
+  padding-left: 20px;  
   font-family: "Times New Roman", Times, serif;
   line-height: 1.5;
   font-size: 1.25rem;
@@ -149,6 +184,9 @@ figcaption.ex1 {
             >
           </p>
       </div>
+    <aside>
+      <p>Article. I. Section. 9. of the U.S. Constitution is referenced from the U.S. National Archives and Records Administration's National Archives web site at https://www.archives.gov/founding-docs/constitution-transcript#1-8</p>
+    </aside>      
 <hr class="solid">  
   <script src="https://www.w3schools.com/lib/w3.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
