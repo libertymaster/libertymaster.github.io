@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-food.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">                    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">                     
   <title>Home | The Liberty Emporium</title>
 <style>
 * { box-sizing: border-box; }
 /* specifically for the body and html elements */
-html {
+/*html {
   margin: 0;
   padding: 0;
-}
+  border: 4px solid white;
+}*/
 
 .full-width-element {
   width: 100%; /* Makes the element as wide as its parent (now the full viewport) */
@@ -26,11 +27,22 @@ html {
   padding: 20px; /* Example padding for content */
 }
 
+/*aside {   
+  margin-top: 16px;
+  margin-right: 8px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  border: 4px solid white; 
+  border-radius: 50px 100px 10px; 
+}*/
+ 
 header {
   font-family: "Times New Roman", Times, serif;
   background-color: black;
   color: white;
   text-align: center;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 body {
@@ -56,6 +68,21 @@ article {
   line-height: 1.5;
 }
 
+/*footer {
+  max-height: 200px;
+  max-width: 150px;
+}
+
+section { 
+  min-height: 200px;
+  margin-top: 16px;
+  margin-right: 8px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  border: 4px solid white; 
+  border-radius: 50px 100px 10px;
+}*/
+
 h1 {
   text-align: left;
 }
@@ -64,7 +91,11 @@ h6 {
   text-align: center;
 }
 
-p {    
+p {
+/*  padding-top: 16px;
+  padding-right: 12px;
+  padding-bottom: 16px;
+  padding-left: 20px;*/  
   font-family: "Times New Roman", Times, serif;
   line-height: 1.5;
   font-size: 1.25rem;
@@ -102,23 +133,29 @@ figcaption.ex1 {
     100% {background-position: -500px 0}
 }
 </style>
-  </head>
+</head>
 <body>
-  <header class="lh-5 py-8 lh-5 py-8">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1 text-start">
-        <a style="color: white; font-size: 1.25rem; text-align: left; font-family: Times New Roman, Times, serif;" href="subscribe.html">Subscribe</a>
-      </div>
-      <div class="col-4 text-center">
-        <p class="text-center single-line" style="color: white; font-family: Times New Roman, Times, serif; font-size: 2.55rem;">The Liberty Emporium</p>
-        <p class="text-center single-line" style="font-size: 1.25rem;"><br>
-          What does liberty mean to you?<br>
-          Embrace your liberty!</p>
-      </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="btn btn-sm btn-outline-secondary" style="color: white; font-size: 1.25rem;" href="signup.html">Sign up</a>
-      </div>          
-      <div class="nav-scroller py-1 mb-3 border-top border-bottom">
+  <script src="https://www.w3schools.com/lib/w3.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/12f0eef082.js" crossorigin="anonymous"></script>
+    <div class="container">
+      <header class="border-bottom lh-5 py-8 border-top lh-5 py-8">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1 text-start">
+            <a style="color: white; font-size: 1.25rem; text-align: left;" href="subscribe.html">Subscribe</a>
+          </div>
+          <div class="col-4 text-center">
+            <p class="text-center single-line" style="color: white; font-family: Times New Roman, Times, serif; font-size: 3rem;">The Liberty Emporium</p>
+            <p class="text-center single-line animated-rainbow" style="font-size: 1.25rem;"><br>
+            What does liberty mean to you?<br>
+            Embrace your liberty!</p>                            
+          </div>          
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="btn btn-sm btn-outline-secondary" style="color: white; font-size: 1.25rem;" href="signup.html">Sign up</a>
+          </div>
+        </div>
+      </header>
+      <div class="nav-scroller py-1 mb-3 border-bottom">
         <nav class="nav nav-underline justify-content-between">
           <a class="nav-item nav-link active w3-food-pumpkin text-start w3-hover-dark-gray" style="color: white; font-size: 1.25rem;">Home</a>
           <a class="nav-item nav-link w3-hover-dark-gray" style="color: white; font-size: 1.25rem;" href="news.html">News</a>
@@ -133,19 +170,16 @@ figcaption.ex1 {
           <a class="nav-item nav-link w3-hover-dark-gray" style="color: white; font-size: 1.25rem;" href="about.html">Team Liberty</a>
           <a class="nav-item nav-link text-end w3-hover-dark-gray" style="color: white; font-size: 1.25rem;" href="contact.html">Contact</a>
         </nav>
-    </div>          
-  </header>         
+      </div>     
+    </div>                  
     <main class="container w3-black">
       <div class="full-width-element">
-        <h1 class="fst-italic" style="color: white; font-family: Times New Roman, Times, serif;">
-          What is The Liberty Emporium?
-        </h1>
-          <p class="w3-text-aqua" style="color: white;">
-            A marketplace (emporium) that is free from oppressive restriction or control (liberty). 
-            The Liberty Emporium is a safe and liberated space where people can trade, contribute content,
-            and share information. Or just check it out!
-          </p>
-      </div>
+        <h1 style="color: white; font-family: Times New Roman, Times, serif; text-align: center;">Opinion</h1>      
+        <h2 class="fst-italic" style="color: white; font-family: Times New Roman, Times, serif; padding: 20px;">What is The Liberty Emporium?</h2>
+          <p class="w3-text-aqua" style="color: white;">A marketplace (emporium) that is free from oppressive restriction or control (liberty).<br> 
+          The Liberty Emporium is a safe and liberated space where people can trade,<br>
+          contribute content, and share information. Or just check it out!</p>
+      </div>     
 <hr class="solid">  
   <script src="https://www.w3schools.com/lib/w3.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
