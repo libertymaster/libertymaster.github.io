@@ -68,8 +68,8 @@ img {
 }
 
 form {
-  border: 3px solid darkgray;
-  font-family: Arial;
+  border: 3px solid blue;
+  font-family: font-family: Times New Roman, Times, serif;
 }
 
 .container {
@@ -82,9 +82,9 @@ input[type=text], input[type=submit] {
   padding: 12px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid darkgray;
+  border: 1px solid blue;
   box-sizing: border-box;
-  background-color: darkgray;  
+  background-color: white;  
 }
 
 input[type=checkbox] {
@@ -102,13 +102,13 @@ input[type=submit]:hover {
 }
 </style>
 <body>
-<h2 class="text-center">The Liberty Articulator</h2>
+<h2 class="text-center animated-rainbow" style="font-family: Times New Roman, Times, serif; padding: 20px;">The Liberty Articulator</h2>
 <form action="/action_page.php">
-  <div class="container">
-    <h2>Subscribe to our Newsletter</h2>
-    <p>Subscribe to our badass newsletter!</p>
+  <div class="container animated-rainbow">
+    <h2>Subscribe to our badass newsletter!</h2>
+    <p>Complete form and click Submit!</p>
   </div>
-  <div class="container" style="background-color:darkgray">
+  <div class="container" style="font-family: Times New Roman, Times, serif;">
     <input type="text" placeholder="Name" name="name" required>
     <input type="text" placeholder="Email address" name="mail" required>
     <label>
@@ -116,7 +116,7 @@ input[type=submit]:hover {
     </label>
   </div>
   <div class="container">
-    <input type="submit" value="Subscribe">
+    <input type="submit" value="Submit">
   </div>
 </form>
 </body>
