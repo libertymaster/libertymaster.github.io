@@ -1,5 +1,17 @@
 :root {
-  --paper: #ffffff;
+  --paper: #000;
+  --surface: #111;
+  --surface-soft: #181818;
+  --ink: #fff;
+  --muted: #d8d8d8;
+  --border: #333;
+  --line: #d0d7de;
+  --accent: #0969da;
+  --accent-dark: #055dca;
+  --accent-hover: #0969da;
+  --max-width: 1200px;
+
+/*  --paper: #ffffff;
   --surface: #f6f8fa;
   --surface-soft: #eaeef2;
   --ink: #24292f;
@@ -12,7 +24,7 @@
   --max-width: 1200px;
 }
 
-/*:root {
+:root {
   --color-bg: #000;
   --color-surface: #111;
   --color-surface-soft: #181818;
